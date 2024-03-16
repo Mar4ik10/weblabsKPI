@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Звіти з лабораторних</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>
+        ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ З ДИСЦИПЛІНИ "WEB-ОРІЄНТОВАНІ ТЕХНОЛОГІЇ.
+        ОСНОВИ FRONTEND та BACKEND РОЗРОБОК"
+      </h1>
+      <div class="student-info">
+        <h2>Студент групи ІО-16 Семенюк Марк</h2>
+        <img src="images/photo.jpg" alt="Фото студента" width="100" />
+      </div>
+
+      <nav>
+        <button
+          id="button-lab1"
+          class="nav-buttons"
+          onclick="displaylabbuttons('aside-button-lab1')"
+        >
+          Лабораторна робота 1
+        </button>
+        <button
+          id="button-lab2"
+          class="nav-buttons"
+          onclick="displaylabbuttons('aside-button-lab2')"
+        >
+          Лабораторна робота 2
+        </button>
+        <button
+          id="button-lab3"
+          class="nav-buttons"
+          onclick="displaylabbuttons('aside-button-lab3')"
+        >
+          Лабораторна робота 3
+        </button>
+        <button
+          id="button-lab4"
+          class="nav-buttons"
+          onclick="displaylabbuttons('aside-button-lab4')"
+        >
+          Лабораторна робота 4
+        </button>
+        <button
+          id="button-lab5"
+          class="nav-buttons"
+          onclick="displaylabbuttons('aside-button-lab5')"
+        >
+          Лабораторна робота 5
+        </button>
+        <button
+          id="button-lab6"
+          class="nav-buttons"
+          onclick="displaylabbuttons('aside-button-lab6')"
+        >
+          Лабораторна робота 6
+        </button>
+        <button
+          id="button-lab7"
+          class="nav-buttons"
+          onclick="displaylabbuttons('aside-button-lab7')"
+        >
+          Лабораторна робота 7
+        </button>
+        <button
+          id="button-lab8"
+          class="nav-buttons"
+          onclick="displaylabbuttons('aside-button-lab8')"
+        >
+          Лабораторна робота 8
+        </button>
+        <button
+          id="button-lab9"
+          class="nav-buttons"
+          onclick="displaylabbuttons('aside-button-lab9')"
+        >
+          Лабораторна робота 9
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <aside>
+        <div id="aside-button-lab1" style="display: none">
+          <button
+            class="aside-button aside-button1"
+            onclick="displayinfo(this)"
+          >
+            Опис предметної галузі
+          </button>
+          <button
+            class="aside-button aside-button2"
+            onclick="displayinfo(this)"
+          >
+            Тема Мета Місце розташування лаби №1
+          </button>
+          <button
+            class="aside-button aside-button3"
+            onclick="displayinfo(this)"
+          >
+            Структура Документа
+          </button>
+          <button
+            class="aside-button aside-button4"
+            onclick="displayinfo(this)"
+          >
+            Висновки
+          </button>
+        </div>
+      </aside>
+
+      <section>
+        <pre></pre>
+      </section>
+    </main>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
