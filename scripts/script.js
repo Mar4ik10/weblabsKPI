@@ -488,7 +488,281 @@ let lab3 = {
           </div>
           <div style="width: 20%; height: 400px"></div>
         </div>
-  `
+  `,
+
+  IMG: `
+  <img src="images/lab3.png" alt=""/>
+  `,
+  HTML: `
+  &lt;header&gt;
+  &lt;nav&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Форми навчання&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Заходи&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Про Академію&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Контакти&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;
+        &lt;select id="cities"&gt;
+          &lt;option value="kyiv"&gt;Київ&lt;/option&gt;
+        &lt;/select&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;
+
+&lt;main&gt;
+  &lt;div class="courses"&gt;
+    &lt;div class="guarantee"&gt;
+      &lt;h1&gt;
+        КУРСИ ПРОГРАМУВАННЯ &lt;span&gt;З 100% ГАРАНТІЄЮ&lt;/span&gt; ПРАЦЕВL
+      &lt;/h1&gt;
+      &lt;p&gt;
+        З SCHOOL ти отримаєш високооплачувану роботу своєї мрії. Ми готуємо
+        висококласних IT-спеціалістів
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;img src="images/school.png" alt="" /&gt;
+  &lt;/div&gt;
+
+  &lt;section&gt;
+    &lt;h2&gt;ВІДГУКИ ВІД РОБОТОДАВЦІВ&lt;/h2&gt;
+    &lt;h1&gt;ПІДТВЕРДЖЕНА ЯКІСТЬ&LT;/h1&gt;
+    &lt;p&gt;
+      Школа програмування - єдина, що має відгуки від роботодавців, які
+      входять до списку найкращих компаній DOU.UA. А випускники курсів з
+      інкубатором отримують гарантії працевлаштування впродовж 6 місяців
+      після успішного закінчення навчання. Але зазвичай їх забирають до себе
+      наші офіційні партнери ще до закінчення курсу.
+    &lt;/p&gt;
+
+    &lt;div class="work-feedbacks"&gt;
+      &lt;img src="images/feedbacks.png" alt="" /&gt;
+
+      &lt;div class="companies"&gt;
+        &lt;img src="images/epam.png" alt="" /&gt;
+        &lt;img src="images/incoria.png" alt="" /&gt;
+        &lt;img src="images/binariks.png" alt="" /&gt;
+        &lt;img src="images/rolique.png" alt="" /&gt;
+        &lt;img src="images/eleks.png" alt="" /&gt;
+        &lt;img src="images/globallogic.png" alt="" /&gt;
+        &lt;img src="images/intetics.png" alt="" /&gt;
+        &lt;img src="images/softserve.png" alt="" /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;Відгук INCORA про випускників Okten&lt;/p&gt;
+  &lt;/section&gt;
+
+  &lt;div class="programming"&gt;
+    &lt;h2&gt;ПОПУЛЯРНІ НАПРЯМКИ&lt;/h2&gt;
+    &lt;h1&gt;КУРСІВ ПРОГРАМУВАННЯ&lt;/h1&gt;
+
+    &lt;div class="cards"&gt;
+      &lt;div class="card"&gt;
+        &lt;img src="images/js.png" alt="" /&gt;
+        &lt;h3&gt;JAVASCRIPT&lt;/h3&gt;
+        &lt;h4&gt;Комплексний курс&lt;/h4&gt;
+
+        &lt;p&gt;
+          Стартовий рівень: початківець&lt;br /&gt;Тривалість: 5-11 місяців&lt;br /&gt;Ціна
+          від 14500 грн.
+        &lt;/p&gt;
+
+        &lt;h5&gt;Залишилось 3 місця&lt;/h5&gt;
+
+        &lt;a href="#"&gt;Детальніше
+        &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class="card"&gt;
+          &lt;img src="images/java.png" alt="" /&gt;
+          &lt;h3&gt;JAVA&lt;/h3&gt;
+          &lt;h4&gt;Комплексний курс&lt;/h4&gt;
+    
+          &lt;p&gt;
+            Стартовий рівень: початківець&lt;br /&gt;Тривалість: 6-11 місяців&lt;br /&gt;Ціна
+            від 14500 грн.
+          &lt;/p&gt;
+    
+          &lt;h5&gt;Залишилось 6 місць&lt;/h5&gt;
+    
+          &lt;a href="#"&gt;Детальніше&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class="card"&gt;
+          &lt;img src="images/python.png" alt="" /&gt;
+          &lt;h3&gt;PYTHON&lt;/h3&gt;
+          &lt;h4&gt;Комплексний курс&lt;/h4&gt;
+    
+          &lt;p&gt;
+            Стартовий рівень: початківець&lt;br /&gt;Тривалість: 6-11 місяців&lt;br /&gt;Ціна
+            від 14500 грн.
+          &lt;/p&gt;
+    
+          &lt;h5&gt;Залишилось 4 місця&lt;/h5&gt;
+    
+          &lt;a href="#"&gt;Детальніше&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    </main>
+  `,
+  CSS: `
+  nav ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  nav ul li {
+    background-color: black;
+    font-size: 1.5rem;
+    list-style: none;
+    padding: 15px;
+  }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  nav ul li select {
+    color: white;
+    background-color: black;
+    border: none;
+    font-size: 1.5rem;
+    margin: auto 50px;
+  }
+  .courses {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+  }
+
+  .guarantee span {
+    color: rgb(33, 59, 206);
+  }
+
+  .guarantee p {
+    width: 400px;
+  }
+
+  section {
+    background-color: rgb(234, 242, 245);
+  }
+
+  section h1 {
+    color: orange;
+  }
+
+  section h1,
+  section h2 {
+    text-align: center;
+  }
+
+  section &gt; p:first-of-type {
+    width: 500px;
+    margin: 0 auto 20px;
+  }
+
+  section &gt; p:last-of-type {
+    margin: 20px;
+  }
+
+  .work-feedbacks {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .work-feedbacks * {
+    margin: 0 20px;
+  }
+  .programming h2 {
+    color: white;
+  }
+
+  .programming h1,
+  .programming h2 {
+    text-align: center;
+  }
+
+  .programming h1 {
+    color: orange;
+  }
+
+  .programming {
+    background-color: rgb(27, 27, 27);
+  }
+
+  .cards {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .card {
+    width: 350px;
+    height: 400px;
+    border: 1px solid rgb(72, 72, 72);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card img {
+    margin: 10px auto;
+  }
+
+  .card h3 {
+    color: white;
+  }
+
+  .card h4 {
+    color: orange;
+  }
+
+  .card h5 {
+    color: rgb(112, 133, 153);
+  }
+
+  .card p {
+    color: white;
+  }
+
+  .card a {
+    margin: auto 0;
+    height: 100%;
+    border: 1px solid rgb(72, 72, 72);
+    width: 100%;
+    text-align: center;
+    color: white;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+  `,
+  Conclusion: `
+  У ході виконання лабораторної роботи ми отримали практичні навички роботи 
+  з версткою сторінок засобами HTML та CSS. Під час розробки макету власного сайту,
+  ми використовували блокову верстку, пояснили вибір цього типу макету та базову 
+  концепцію верстки сторінок. Робота з таблицями та блоками (плаваючими елементами)
+  надала нам можливість порівняти фіксовану та гумову верстку, оцінити переваги та
+  недоліки кожного підходу.
+
+Використання технології Flexbox дозволило нам легко організувати розмітку 
+елементів на сторінці, забезпечивши гнучкість та ефективне управління їх 
+розташуванням. Ми виконали завдання засобами Flexbox, згідно з власними номерами
+варіантів, і висвітлили особливості макету кожного студента.
+
+У висновках ми зазначили переваги та недоліки використання таблиць та блоків 
+(плаваючих блоків) для створення веб-додатків. Використання таблиць може бути 
+зручним для створення рівномірної розмітки, але може виникнути проблема з адаптивністю 
+на різних пристроях. Блокова верстка надає більшу гнучкість у керуванні розташуванням 
+елементів та працює краще для адаптивного дизайну.
+
+У цілому, виконання лабораторної роботи дозволило нам поглибити знання та навички
+з верстки веб-сторінок, ознайомитися з різними типами макетів та вивчити основи
+Flexbox, що буде корисним у подальшій роботі з веб-розробкою.
+`
 }
 
 
@@ -572,7 +846,16 @@ function displayinfo(button) {
               containing.innerHTML = lab3.FlexibleDiv;
             }
             else if (classelementName == "aside-button7"){
-              containing.innerHTML = lab3.FixedDiv;
+              containing.innerHTML = lab3.IMG;
+            }
+            else if (classelementName == "aside-button8"){
+              containing.innerHTML = lab3.HTML;
+            }
+            else if (classelementName == "aside-button9"){
+              containing.innerHTML = lab3.CSS;
+            }
+            else if (classelementName == "aside-button10"){
+              containing.innerHTML = lab3.Conclusion;
             }
             break;
             }
