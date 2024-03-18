@@ -1,18 +1,23 @@
 let lab1 = {
     Opys: `
+    <pre>
     <b>Предметне середовище:</b> Предметним середовищем для лабораторної роботи є розробка веб-сайту для пекарні. 
     Для цього використовується сучасний стек технологій, включаючи HTML, CSS і JavaScript для розробки фронтенду.
     Для управління версіями та спільної роботи над проєктом використовується
-    система контролю версій Git та хмарний сервіс GitHub.`,
+    система контролю версій Git та хмарний сервіс GitHub.
+    </pre>`,
     Theme: `
+    <pre>
     <b>Тема:</b> СТРУКТУРА HTML-ДОКУМЕНТА.ВИБІР ПРЕДМЕТНОЇ ГАЛУЗІ. РОБОТА З ПОСИЛАННЯМИ, ТАБЛИЦЯМИ, ЗОБРАЖЕННЯМИ, СПИСКАМИ.
     
     <b>Мета:</b> придбати практичні навички роботи з HTML-документом, таблицями, зображеннями, посиланнями, списками, формами. 
     Створити шаблон звітного HTML-документом для відображення результатів роботи всіх лабораторних робіт. HTML-ДОКУМЕНТІ.
     
-    <b>Сайт:</b> https://github.com/Mar4ik10/WebCoworking`,
+    <b>Сайт:</b> https://github.com/Mar4ik10/WebCoworking
+    </pre>`,
     Structure: {
         Table: `
+        <pre>
         <b>Table:</b>
 
 
@@ -50,10 +55,11 @@ let lab1 = {
           &lt;td&gt;Вихідний&lt;/td&gt;
         &lt;/tr&gt;
       &lt;/table&gt;
+      </pre>
       `,
 
         Form: `
-        
+        <pre>
         <b>Form</b>
         
         &lt;div class="footer-contacts"&gt;
@@ -80,8 +86,10 @@ let lab1 = {
           &lt;input type="submit" value="Відправити" /&gt;
         &lt;/form&gt;
       &lt;/div&gt;
+      </pre>
       `,
         Image: `
+        <pre>
         <b>Images</b>        
         
         &lt;img src="images/logo.png" alt="Лого" /&gt;
@@ -98,6 +106,7 @@ let lab1 = {
             &gt;&lt;img src="images/icons/facebook.png" alt="Facebook"
           /&gt;&lt;/a&gt;
         &lt;/div&gt;
+        </pre>
         `,
         
     },
@@ -115,6 +124,7 @@ let lab1 = {
 
 let lab2 = {
   Theme: `
+  <pre>
   <b>Тема</b>: КАСКАДНІ ТАБЛИЦІ СТИЛІВ. СЕЛЕКТОРИ .ІДЕНТИФІКАТОРИ. СТИЛЬОВЕ
   ОФОРМЛЕННЯ ТЕКСТОВИХ ЕЛЕМЕНТІВ В HTML-ДОКУМЕНТАХ.
 
@@ -123,8 +133,11 @@ let lab2 = {
   внутрішними відступами, плаваючими елементами, оформленням текстових елементів
   
   <b>Сайт:</b> https://github.com/Mar4ik10/WebCoworking
+  </pre>
   `,
-  Opys: `<h1>Способи підключення:</h1>
+  Opys: `
+  <pre>
+  <h1>Способи підключення:</h1>
         
   <h4>Вкладений CSS:</h4>
   <p>  
@@ -137,9 +150,13 @@ let lab2 = {
    <h4>Внутрішній CSS:</h4>
    <p>
    Стилі включаються безпосередньо в теги HTML-елементів за допомогою атрибуту style.</p>
-  </p>`,
+  </p>
+  </pre>
+  `,
   Selectors: {
-    Tags: `<h1>Селектори тегів</h1>
+    Tags: `
+    <pre>
+    <h1>Селектори тегів</h1>
     <p>
 
 
@@ -166,8 +183,10 @@ let lab2 = {
     margin: 30px auto 0;
     padding-bottom: 30px;
     width: 80%;
+    </pre>
 }`,
     Classes: `
+    <pre>
     <h1>Селектори класів</h1>
     <p>.contact-row {
       display: flex;
@@ -189,8 +208,11 @@ let lab2 = {
     position: relative;
     margin: 20px 0;
 }</p>
-<img src="images/circle.png" alt="">`,
+<img src="images/circle.png" alt="">
+</pre>
+`,
     Ids: `
+    <pre>
 <h1>Селектори ідентифікаторів</h1>
 <p>section#Service {
   display: flex;
@@ -205,8 +227,10 @@ background-color: #FFD2B9;
 text-align: center;
 overflow-x: auto;
 }
-</p>`,
+</p>
+</pre>`,
     Others: `
+    <pre>
 <h1>Інші</h1>
 <p>nav .nav-buttons {
 display: flex;
@@ -224,9 +248,12 @@ color: black;
 font-weight: 700;
 font-size: 1.5rem;
 margin: 0 10px;
-}</p>`
+}</p>
+</pre>
+`
   },
   CSS: `
+  <pre>
   <h1>Шрифти</h1>
           <p>
           .price-card h2 {
@@ -263,6 +290,7 @@ section#Time table th, td {
     border: 1px solid black;
     font-size: 24px;
 }</p>
+</pre>
   `,
   Conclusion: `
   Під час виконання лабораторної роботи ми успішно ознайомилися з різноманітними
@@ -274,11 +302,147 @@ section#Time table th, td {
   `
 }
 
+let lab3 = {
+  Theme: `
+  <pre>
+  Тема: ВЕРСТКА HTML-ДОКУМЕНТУ. БЛОКОВА ВЕРСТКА. ВЕРСТКА
+ЗАСОБАМИ CSS та FLEXBOX.
+
+Мета:
+⎯ придбати практичні навички роботи верстки сторінок засобами CSS, верстки на
+основі плаваючих елементів, з’ясувати переваги та недоліки типів макетів веб-
+сторінок
+⎯ придбати практичні навички роботи верстки сторінок засобами CSS та FLEXBOX
+</pre>
+`,
+  Maket: `
+  <pre>
+  <h1>HEADER</h1>
+  <img src="images/header.png" alt="" width="500px">
+
+  <h1>BODY</h1>
+  <img src="images/body.png" alt="" width="500px">
+
+  <h1>FOOTER</h1>
+  <img src="images/footer.png" alt="" width="500px">
+  </pre>
+  `,
+  FixedTable: `
+  <pre>
+  <style>
+            table, th, td {
+              border-collapse: collapse;
+              border: 1px solid;
+              font-size: 35px;
+            }
+          </style>
+          <table style="width: 700px;" >
+            <tr>
+              <td rowspan="4" style="width: 100px;"></td>
+              <td colspan="2" style="width: 400px;padding-left: 10px; text-align: left;color: white;background-color: blue;">1</td>
+              <td rowspan="4" style="width: 100px;"></td>
+            </tr>
+            <tr>
+              <td rowspan="2" style="width: 50px;height: 300px;background-color: yellow; color: black;">2</td>
+              <td style="width: 100px;height: 100px;background-color: yellow; color: black;">5</td>
+            </tr>
+            <tr>
+              <td >4</td>
+            </tr>
+            <tr>
+              <td colspan="2" style="background-color: blue; color: white;">3</td>
+            </tr>
+        </table>
+        </pre>
+  `,
+  FlexibleTable:`
+  <style>
+            table, th, td {
+              border-collapse: collapse;
+              border: 1px solid;
+              font-size: 35px;
+            }
+          </style>
+          
+          <table style="width: 100%;" >
+            <tr>
+              <td rowspan="4" style="width: 100px;"></td>
+              <td colspan="2" style="width: 400px;padding-left: 10px; text-align: left;color: white;background-color: blue;">1</td>
+              <td rowspan="4" style="width: 100px;"></td>
+            </tr>
+            <tr>
+              <td rowspan="2" style="width: 50px;height: 300px;background-color: yellow; color: black;">2</td>
+              <td style="width: 100px;height: 100px;background-color: yellow; color: black;">5</td>
+            </tr>
+            <tr>
+              <td >4</td>
+            </tr>
+            <tr>
+              <td colspan="2" style="background-color: blue; color: white;">3</td>
+            </tr>
+        </table>
+  `,
+  FixedDiv: `
+  <style>
+          section div {
+            font-size: 20px;
+            border: 1px solid;
+          }
+        </style>
+        <div style="width: 500px; height: 400px; display: flex">
+          <div
+            style="
+              height: 400px;
+              width: 100px;
+              line-height: 300px;
+              background-color: yellow;
+              text-align: center;
+            "
+          >
+            2
+          </div>
+          <div style="width: 100px; height: 400px"></div>
+          <div style="width: 200px; height: 400px">
+            <div
+              style="
+                background-color: blue;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                color: white;
+              "
+            >
+              1
+            </div>
+            <div style="height: 300px; line-height: 300px; text-align: center">
+              4
+            </div>
+            <div
+              style="
+                background-color: blue;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                color: white;
+              "
+            >
+              3
+            </div>
+          </div>
+          <div style="width: 100px; height: 400px"></div>
+        </div>
+  `,
+  FlexibleDiv:`
+  
+  `
+}
+
 
 let currentelement;
 let lastelement;
 
-let containing = document.querySelector("section pre");
+let containing = document.getElementsByTagName("section")[0];
+console.log(containing);
 
 function displaylabbuttons(buttonid) {
   if (lastelement) {
@@ -339,17 +503,22 @@ function displayinfo(button) {
               containing.innerHTML = lab3.Theme;
             }
             else if (classelementName == "aside-button2"){
-              containing.innerHTML = lab3.Opys;
+              containing.innerHTML = lab3.Maket;
             }
             else if (classelementName == "aside-button3"){
-              containing.innerHTML = lab3
-  
+              containing.innerHTML = lab3.FixedTable
             }
             else if (classelementName == "aside-button4"){
-              containing.innerHTML = lab3.CSS;
+              containing.innerHTML = lab3.FlexibleTable;
             }
             else if (classelementName == "aside-button5"){
-              containing.innerHTML = lab3.Conclusion;
+              containing.innerHTML = lab3.FixedDiv;
+            }
+            else if (classelementName == "aside-button6"){
+              containing.innerHTML = lab3.FlexibleDiv;
+            }
+            else if (classelementName == "aside-button7"){
+              containing.innerHTML = lab3.FixedDiv;
             }
             break;
             }
