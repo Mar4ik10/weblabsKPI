@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab3</title>
+  </head>
+  <body>
+    <style>
+      nav ul {
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      nav ul li {
+        background-color: black;
+        font-size: 1.5rem;
+        list-style: none;
+        padding: 15px;
+      }
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+      }
+
+      nav ul li select {
+        color: white;
+        background-color: black;
+        border: none;
+        font-size: 1.5rem;
+        margin: auto 50px;
+      }
+      .courses {
+        display: flex;
+        justify-content: space-between;
+        margin: 50px;
+      }
+
+      .guarantee span {
+        color: rgb(33, 59, 206);
+      }
+
+      .guarantee p {
+        width: 400px;
+      }
+
+      section {
+        background-color: rgb(234, 242, 245);
+      }
+
+      section h1 {
+        color: orange;
+      }
+
+      section h1,
+      section h2 {
+        text-align: center;
+      }
+
+      section > p:first-of-type {
+        width: 500px;
+        margin: 0 auto 20px;
+      }
+
+      section > p:last-of-type {
+        margin: 20px;
+      }
+
+      .work-feedbacks {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .work-feedbacks * {
+        margin: 0 20px;
+      }
+      .programming h2 {
+        color: white;
+      }
+
+      .programming h1,
+      .programming h2 {
+        text-align: center;
+      }
+
+      .programming h1 {
+        color: orange;
+      }
+
+      .programming {
+        background-color: rgb(27, 27, 27);
+      }
+
+      .cards {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .card {
+        width: 350px;
+        height: 400px;
+        border: 1px solid rgb(72, 72, 72);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .card img {
+        margin: 10px auto;
+      }
+
+      .card h3 {
+        color: white;
+      }
+
+      .card h4 {
+        color: orange;
+      }
+
+      .card h5 {
+        color: rgb(112, 133, 153);
+      }
+
+      .card p {
+        color: white;
+      }
+
+      .card a {
+        margin: auto 0;
+        height: 100%;
+        border: 1px solid rgb(72, 72, 72);
+        width: 100%;
+        text-align: center;
+        color: white;
+        border-radius: 0 0 20px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        text-decoration: none;
+      }
+    </style>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Форми навчання</a></li>
+          <li><a href="#">Заходи</a></li>
+          <li><a href="#">Про Академію</a></li>
+          <li><a href="#">Контакти</a></li>
+          <li>
+            <select id="cities">
+              <option value="kyiv">Київ</option>
+            </select>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="courses">
+        <div class="guarantee">
+          <h1>
+            КУРСИ ПРОГРАМУВАННЯ <span>З 100% ГАРАНТІЄЮ</span> ПРАЦЕВЛАШТУВАННЯ
+          </h1>
+          <p>
+            З SCHOOL ти отримаєш високооплачувану роботу своєї мрії. Ми готуємо
+            висококласних IT-спеціалістів
+          </p>
+        </div>
+        <img src="images/school.png" alt="" />
+      </div>
+
+      <section>
+        <h2>ВІДГУКИ ВІД РОБОТОДАВЦІВ</h2>
+        <h1>ПІДТВЕРДЖЕНА ЯКІСТЬ</h1>
+        <p>
+          Школа програмування - єдина, що має відгуки від роботодавців, які
+          входять до списку найкращих компаній DOU.UA. А випускники курсів з
+          інкубатором отримують гарантії працевлаштування впродовж 6 місяців
+          після успішного закінчення навчання. Але зазвичай їх забирають до себе
+          наші офіційні партнери ще до закінчення курсу.
+        </p>
+
+        <div class="work-feedbacks">
+          <img src="images/feedbacks.png" alt="" />
+
+          <div class="companies">
+            <img src="images/epam.png" alt="" />
+            <img src="images/incoria.png" alt="" />
+            <img src="images/binariks.png" alt="" />
+            <img src="images/rolique.png" alt="" />
+            <img src="images/eleks.png" alt="" />
+            <img src="images/globallogic.png" alt="" />
+            <img src="images/intetics.png" alt="" />
+            <img src="images/softserve.png" alt="" />
+          </div>
+        </div>
+
+        <p>Відгук INCORA про випускників Okten</p>
+      </section>
+
+      <div class="programming">
+        <h2>ПОПУЛЯРНІ НАПРЯМКИ</h2>
+        <h1>КУРСІВ ПРОГРАМУВАННЯ</h1>
+
+        <div class="cards">
+          <div class="card">
+            <img src="images/js.png" alt="" />
+            <h3>JAVASCRIPT</h3>
+            <h4>Комплексний курс</h4>
+
+            <p>
+              Стартовий рівень: початківець<br />Тривалість: 5-11 місяців<br />Ціна
+              від 14500 грн.
+            </p>
+
+            <h5>Залишилось 3 місця</h5>
+
+            <a href="#">Детальніше</a>
+          </div>
+          <div class="card">
+            <img src="images/java.png" alt="" />
+            <h3>JAVA</h3>
+            <h4>Комплексний курс</h4>
+
+            <p>
+              Стартовий рівень: початківець<br />Тривалість: 6-11 місяців<br />Ціна
+              від 14500 грн.
+            </p>
+
+            <h5>Залишилось 6 місць</h5>
+
+            <a href="#">Детальніше</a>
+          </div>
+          <div class="card">
+            <img src="images/python.png" alt="" />
+            <h3>PYTHON</h3>
+            <h4>Комплексний курс</h4>
+
+            <p>
+              Стартовий рівень: початківець<br />Тривалість: 6-11 місяців<br />Ціна
+              від 14500 грн.
+            </p>
+
+            <h5>Залишилось 4 місця</h5>
+
+            <a href="#">Детальніше</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

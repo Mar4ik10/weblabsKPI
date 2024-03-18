@@ -433,7 +433,61 @@ let lab3 = {
         </div>
   `,
   FlexibleDiv:`
-  
+  <style>
+          section div {
+            font-size: 20px;
+            border: 1px solid;
+          }
+        </style>
+        <div style="width: 100%; height: 400px; display: flex">
+          <div
+            style="
+              height: 400px;
+              width: 20%;
+              line-height: 300px;
+              background-color: yellow;
+              text-align: center;
+            "
+          >
+            2
+          </div>
+          <div style="width: 20%; height: 400px"></div>
+          <div style="width: 45%; height: 400px">
+            <div
+              style="
+                background-color: blue;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                color: white;
+              "
+            >
+              1
+            </div>
+            <div
+              style="
+                width: 100%;
+                height: 300px;
+                line-height: 300px;
+                text-align: center;
+              "
+            >
+              4
+            </div>
+            <div
+              style="
+                background-color: blue;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                color: white;
+              "
+            >
+              3
+            </div>
+          </div>
+          <div style="width: 20%; height: 400px"></div>
+        </div>
   `
 }
 
