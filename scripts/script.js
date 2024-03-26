@@ -1,23 +1,20 @@
 let lab1 = {
     Opys: `
-    <pre>
     <b>Предметне середовище:</b> Предметним середовищем для лабораторної роботи є розробка веб-сайту для пекарні. 
     Для цього використовується сучасний стек технологій, включаючи HTML, CSS і JavaScript для розробки фронтенду.
     Для управління версіями та спільної роботи над проєктом використовується
     система контролю версій Git та хмарний сервіс GitHub.
-    </pre>`,
+    `,
     Theme: `
-    <pre>
     <b>Тема:</b> СТРУКТУРА HTML-ДОКУМЕНТА.ВИБІР ПРЕДМЕТНОЇ ГАЛУЗІ. РОБОТА З ПОСИЛАННЯМИ, ТАБЛИЦЯМИ, ЗОБРАЖЕННЯМИ, СПИСКАМИ.
     
     <b>Мета:</b> придбати практичні навички роботи з HTML-документом, таблицями, зображеннями, посиланнями, списками, формами. 
     Створити шаблон звітного HTML-документом для відображення результатів роботи всіх лабораторних робіт. HTML-ДОКУМЕНТІ.
     
     <b>Сайт:</b> https://github.com/Mar4ik10/WebCoworking
-    </pre>`,
+    `,
     Structure: {
         Table: `
-        <pre>
         <b>Table:</b>
 
 
@@ -55,11 +52,10 @@ let lab1 = {
           &lt;td&gt;Вихідний&lt;/td&gt;
         &lt;/tr&gt;
       &lt;/table&gt;
-      </pre>
+      
       `,
 
         Form: `
-        <pre>
         <b>Form</b>
         
         &lt;div class="footer-contacts"&gt;
@@ -86,10 +82,9 @@ let lab1 = {
           &lt;input type="submit" value="Відправити" /&gt;
         &lt;/form&gt;
       &lt;/div&gt;
-      </pre>
+     
       `,
         Image: `
-        <pre>
         <b>Images</b>        
         
         &lt;img src="images/logo.png" alt="Лого" /&gt;
@@ -106,7 +101,6 @@ let lab1 = {
             &gt;&lt;img src="images/icons/facebook.png" alt="Facebook"
           /&gt;&lt;/a&gt;
         &lt;/div&gt;
-        </pre>
         `,
         
     },
@@ -124,7 +118,6 @@ let lab1 = {
 
 let lab2 = {
   Theme: `
-  <pre>
   <b>Тема</b>: КАСКАДНІ ТАБЛИЦІ СТИЛІВ. СЕЛЕКТОРИ .ІДЕНТИФІКАТОРИ. СТИЛЬОВЕ
   ОФОРМЛЕННЯ ТЕКСТОВИХ ЕЛЕМЕНТІВ В HTML-ДОКУМЕНТАХ.
 
@@ -133,10 +126,8 @@ let lab2 = {
   внутрішними відступами, плаваючими елементами, оформленням текстових елементів
   
   <b>Сайт:</b> https://github.com/Mar4ik10/WebCoworking
-  </pre>
   `,
   Opys: `
-  <pre>
   <h1>Способи підключення:</h1>
         
   <h4>Вкладений CSS:</h4>
@@ -151,11 +142,9 @@ let lab2 = {
    <p>
    Стилі включаються безпосередньо в теги HTML-елементів за допомогою атрибуту style.</p>
   </p>
-  </pre>
   `,
   Selectors: {
     Tags: `
-    <pre>
     <h1>Селектори тегів</h1>
     <p>
 
@@ -183,10 +172,8 @@ let lab2 = {
     margin: 30px auto 0;
     padding-bottom: 30px;
     width: 80%;
-    </pre>
 }`,
     Classes: `
-    <pre>
     <h1>Селектори класів</h1>
     <p>.contact-row {
       display: flex;
@@ -209,10 +196,8 @@ let lab2 = {
     margin: 20px 0;
 }</p>
 <img src="images/circle.png" alt="">
-</pre>
 `,
     Ids: `
-    <pre>
 <h1>Селектори ідентифікаторів</h1>
 <p>section#Service {
   display: flex;
@@ -228,9 +213,8 @@ text-align: center;
 overflow-x: auto;
 }
 </p>
-</pre>`,
+`,
     Others: `
-    <pre>
 <h1>Інші</h1>
 <p>nav .nav-buttons {
 display: flex;
@@ -249,11 +233,9 @@ font-weight: 700;
 font-size: 1.5rem;
 margin: 0 10px;
 }</p>
-</pre>
 `
   },
   CSS: `
-  <pre>
   <h1>Шрифти</h1>
           <p>
           .price-card h2 {
@@ -290,7 +272,6 @@ section#Time table th, td {
     border: 1px solid black;
     font-size: 24px;
 }</p>
-</pre>
   `,
   Conclusion: `
   Під час виконання лабораторної роботи ми успішно ознайомилися з різноманітними
@@ -304,19 +285,24 @@ section#Time table th, td {
 
 let lab3 = {
   Theme: `
-  <pre>
-  Тема: ВЕРСТКА HTML-ДОКУМЕНТУ. БЛОКОВА ВЕРСТКА. ВЕРСТКА
-ЗАСОБАМИ CSS та FLEXBOX.
-
-Мета:
-⎯ придбати практичні навички роботи верстки сторінок засобами CSS, верстки на
-основі плаваючих елементів, з’ясувати переваги та недоліки типів макетів веб-
-сторінок
-⎯ придбати практичні навички роботи верстки сторінок засобами CSS та FLEXBOX
-</pre>
+  <div class="center">
+    <h1>Тема</h1>
+    <p>
+      ВЕРСТКА HTML-ДОКУМЕНТУ. БЛОКОВА ВЕРСТКА. ВЕРСТКА ЗАСОБАМИ CSS та
+      FLEXBOX.
+    </p>
+    <br />
+    <h1>Мета:</h1>
+    <p>
+      Придбати практичні навички роботи верстки сторінок засобами CSS,
+      верстки на основі плаваючих елементів, з’ясувати переваги та
+      недоліки типів макетів веб- сторінок ⎯ придбати практичні навички
+      роботи верстки сторінок засобами CSS та FLEXBOX
+    </p>
+  </div>
 `,
   Maket: `
-  <pre>
+  <div class="center">
   <h1>HEADER</h1>
   <img src="images/header.png" alt="" width="500px">
 
@@ -325,420 +311,418 @@ let lab3 = {
 
   <h1>FOOTER</h1>
   <img src="images/footer.png" alt="" width="500px">
-  </pre>
+  </div>
   `,
   FixedTable: `
-  <pre>
   <style>
-            table, th, td {
-              border-collapse: collapse;
-              border: 1px solid;
-              font-size: 35px;
-            }
-          </style>
-          <table style="width: 700px;" >
-            <tr>
-              <td rowspan="4" style="width: 100px;"></td>
-              <td colspan="2" style="width: 400px;padding-left: 10px; text-align: left;color: white;background-color: blue;">1</td>
-              <td rowspan="4" style="width: 100px;"></td>
-            </tr>
-            <tr>
-              <td rowspan="2" style="width: 50px;height: 300px;background-color: yellow; color: black;">2</td>
-              <td style="width: 100px;height: 100px;background-color: yellow; color: black;">5</td>
-            </tr>
-            <tr>
-              <td >4</td>
-            </tr>
-            <tr>
-              <td colspan="2" style="background-color: blue; color: white;">3</td>
-            </tr>
-        </table>
-        </pre>
+    table, th, td {
+      border-collapse: collapse;
+      border: 1px solid;
+      font-size: 35px;
+    }
+  </style>
+    <table style="width: 700px;" >
+      <tr>
+        <td rowspan="4" style="width: 100px;"></td>
+        <td colspan="2" style="width: 400px;padding-left: 10px; text-align: left;color: white;background-color: blue;">1</td>
+        <td rowspan="4" style="width: 100px;"></td>
+      </tr>
+      <tr>
+        <td rowspan="2" style="width: 50px;height: 300px;background-color: yellow; color: black;">2</td>
+        <td style="width: 100px;height: 100px;background-color: yellow; color: black;">5</td>
+      </tr>
+      <tr>
+        <td >4</td>
+      </tr>
+      <tr>
+        <td colspan="2" style="background-color: blue; color: white;">3</td>
+      </tr>
+    </table>
   `,
   FlexibleTable:`
   <style>
-            table, th, td {
-              border-collapse: collapse;
-              border: 1px solid;
-              font-size: 35px;
-            }
-          </style>
-          
-          <table style="width: 100%;" >
-            <tr>
-              <td rowspan="4" style="width: 100px;"></td>
-              <td colspan="2" style="width: 400px;padding-left: 10px; text-align: left;color: white;background-color: blue;">1</td>
-              <td rowspan="4" style="width: 100px;"></td>
-            </tr>
-            <tr>
-              <td rowspan="2" style="width: 50px;height: 300px;background-color: yellow; color: black;">2</td>
-              <td style="width: 100px;height: 100px;background-color: yellow; color: black;">5</td>
-            </tr>
-            <tr>
-              <td >4</td>
-            </tr>
-            <tr>
-              <td colspan="2" style="background-color: blue; color: white;">3</td>
-            </tr>
-        </table>
+    table, th, td {
+      border-collapse: collapse;
+      border: 1px solid;
+      font-size: 35px;
+    }
+  </style>
+  
+  <table style="width: 100%;" >
+    <tr>
+      <td rowspan="4" style="width: 100px;"></td>
+      <td colspan="2" style="width: 400px;padding-left: 10px; text-align: left;color: white;background-color: blue;">1</td>
+      <td rowspan="4" style="width: 100px;"></td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="width: 50px;height: 300px;background-color: yellow; color: black;">2</td>
+      <td style="width: 100px;height: 100px;background-color: yellow; color: black;">5</td>
+    </tr>
+    <tr>
+      <td >4</td>
+    </tr>
+    <tr>
+      <td colspan="2" style="background-color: blue; color: white;">3</td>
+    </tr>
+</table>
   `,
   FixedDiv: `
   <style>
-          section div {
-            font-size: 20px;
-            border: 1px solid;
-          }
-        </style>
-        <div style="width: 500px; height: 400px; display: flex">
-          <div
-            style="
-              height: 400px;
-              width: 100px;
-              line-height: 300px;
-              background-color: yellow;
-              text-align: center;
-            "
-          >
-            2
-          </div>
-          <div style="width: 100px; height: 400px"></div>
-          <div style="width: 200px; height: 400px">
-            <div
-              style="
-                background-color: blue;
-                height: 50px;
-                line-height: 50px;
-                text-align: center;
-                color: white;
-              "
-            >
-              1
-            </div>
-            <div style="height: 300px; line-height: 300px; text-align: center">
-              4
-            </div>
-            <div
-              style="
-                background-color: blue;
-                height: 50px;
-                line-height: 50px;
-                text-align: center;
-                color: white;
-              "
-            >
-              3
-            </div>
-          </div>
-          <div style="width: 100px; height: 400px"></div>
-        </div>
+    section div {
+      font-size: 20px;
+      border: 1px solid;
+    }
+  </style>
+  <div style="width: 500px; height: 400px; display: flex">
+    <div
+      style="
+        height: 400px;
+        width: 100px;
+        line-height: 300px;
+        background-color: yellow;
+        text-align: center;
+      "
+    >
+      2
+    </div>
+    <div style="width: 100px; height: 400px"></div>
+    <div style="width: 200px; height: 400px">
+      <div
+        style="
+          background-color: blue;
+          height: 50px;
+          line-height: 50px;
+          text-align: center;
+          color: white;
+        "
+      >
+        1
+      </div>
+      <div style="height: 300px; line-height: 300px; text-align: center">
+        4
+      </div>
+      <div
+        style="
+          background-color: blue;
+          height: 50px;
+          line-height: 50px;
+          text-align: center;
+          color: white;
+        "
+      >
+        3
+      </div>
+    </div>
+    <div style="width: 100px; height: 400px"></div>
+  </div>
   `,
   FlexibleDiv:`
   <style>
-          section div {
-            font-size: 20px;
-            border: 1px solid;
-          }
-        </style>
-        <div style="width: 100%; height: 400px; display: flex">
-          <div
-            style="
-              height: 400px;
-              width: 20%;
-              line-height: 300px;
-              background-color: yellow;
-              text-align: center;
-            "
-          >
-            2
-          </div>
-          <div style="width: 20%; height: 400px"></div>
-          <div style="width: 45%; height: 400px">
-            <div
-              style="
-                background-color: blue;
-                height: 50px;
-                line-height: 50px;
-                text-align: center;
-                color: white;
-              "
-            >
-              1
-            </div>
-            <div
-              style="
-                width: 100%;
-                height: 300px;
-                line-height: 300px;
-                text-align: center;
-              "
-            >
-              4
-            </div>
-            <div
-              style="
-                background-color: blue;
-                height: 50px;
-                line-height: 50px;
-                text-align: center;
-                color: white;
-              "
-            >
-              3
-            </div>
-          </div>
-          <div style="width: 20%; height: 400px"></div>
-        </div>
+    section div {
+      font-size: 20px;
+      border: 1px solid;
+    }
+  </style>
+  <div style="width: 100%; height: 400px; display: flex">
+    <div
+      style="
+        height: 400px;
+        width: 20%;
+        line-height: 300px;
+        background-color: yellow;
+        text-align: center;
+      "
+    >
+      2
+    </div>
+    <div style="width: 20%; height: 400px"></div>
+    <div style="width: 45%; height: 400px">
+      <div
+        style="
+          background-color: blue;
+          height: 50px;
+          line-height: 50px;
+          text-align: center;
+          color: white;
+        "
+      >
+        1
+      </div>
+      <div
+        style="
+          width: 100%;
+          height: 300px;
+          line-height: 300px;
+          text-align: center;
+        "
+      >
+        4
+      </div>
+      <div
+        style="
+          background-color: blue;
+          height: 50px;
+          line-height: 50px;
+          text-align: center;
+          color: white;
+        "
+      >
+        3
+      </div>
+    </div>
+    <div style="width: 20%; height: 400px"></div>
+  </div>
   `,
 
   IMG: `
   <img src="images/lab3.png" alt=""/>
   `,
   HTML: `
-  &lt;header&gt;
-  &lt;nav&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href="#"&gt;Форми навчання&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href="#"&gt;Заходи&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href="#"&gt;Про Академію&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href="#"&gt;Контакти&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;
-        &lt;select id="cities"&gt;
-          &lt;option value="kyiv"&gt;Київ&lt;/option&gt;
-        &lt;/select&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/nav&gt;
-&lt;/header&gt;
-
-&lt;main&gt;
-  &lt;div class="courses"&gt;
-    &lt;div class="guarantee"&gt;
-      &lt;h1&gt;
-        КУРСИ ПРОГРАМУВАННЯ &lt;span&gt;З 100% ГАРАНТІЄЮ&lt;/span&gt; ПРАЦЕВL
-      &lt;/h1&gt;
-      &lt;p&gt;
+  &lt;header&gt;<br/>
+  &lt;nav&gt;<br/>
+    &lt;ul&gt;<br/>
+      &lt;li&gt;&lt;a href="#"&gt;Форми навчання&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;li&gt;&lt;a href="#"&gt;Заходи&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;li&gt;&lt;a href="#"&gt;Про Академію&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;li&gt;&lt;a href="#"&gt;Контакти&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;li&gt;<br/>
+        &lt;select id="cities"&gt;<br/>
+          &lt;option value="kyiv"&gt;Київ&lt;/option&gt;<br/>
+        &lt;/select&gt;<br/>
+      &lt;/li&gt;<br/>
+    &lt;/ul&gt;<br/>
+  &lt;/nav&gt;<br/>
+&lt;/header&gt;<br/>
+<br/>
+&lt;main&gt;<br/><br/>
+  &lt;div class="courses"&gt;<br/>
+    &lt;div class="guarantee"&gt;<br/>
+      &lt;h1&gt;<br/>
+        КУРСИ ПРОГРАМУВАННЯ &lt;span&gt;З 100% ГАРАНТІЄЮ&lt;/span&gt; ПРАЦЕВL<br/>
+      &lt;/h1&gt;<br/>
+      &lt;p&gt;<br/>
         З SCHOOL ти отримаєш високооплачувану роботу своєї мрії. Ми готуємо
-        висококласних IT-спеціалістів
-      &lt;/p&gt;
-    &lt;/div&gt;
-    &lt;img src="images/school.png" alt="" /&gt;
-  &lt;/div&gt;
+        висококласних IT-спеціалістів<br/>
+      &lt;/p&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;img src="images/school.png" alt="" /&gt;<br/>
+  &lt;/div&gt;<br/>
 
-  &lt;section&gt;
-    &lt;h2&gt;ВІДГУКИ ВІД РОБОТОДАВЦІВ&lt;/h2&gt;
-    &lt;h1&gt;ПІДТВЕРДЖЕНА ЯКІСТЬ&LT;/h1&gt;
-    &lt;p&gt;
+  &lt;section&gt;<br/>
+    &lt;h2&gt;ВІДГУКИ ВІД РОБОТОДАВЦІВ&lt;/h2&gt;<br/>
+    &lt;h1&gt;ПІДТВЕРДЖЕНА ЯКІСТЬ&LT;/h1&gt;<br/>
+    &lt;p&gt;<br/>
       Школа програмування - єдина, що має відгуки від роботодавців, які
       входять до списку найкращих компаній DOU.UA. А випускники курсів з
       інкубатором отримують гарантії працевлаштування впродовж 6 місяців
       після успішного закінчення навчання. Але зазвичай їх забирають до себе
       наші офіційні партнери ще до закінчення курсу.
-    &lt;/p&gt;
-
-    &lt;div class="work-feedbacks"&gt;
-      &lt;img src="images/feedbacks.png" alt="" /&gt;
-
-      &lt;div class="companies"&gt;
-        &lt;img src="images/epam.png" alt="" /&gt;
-        &lt;img src="images/incoria.png" alt="" /&gt;
-        &lt;img src="images/binariks.png" alt="" /&gt;
-        &lt;img src="images/rolique.png" alt="" /&gt;
-        &lt;img src="images/eleks.png" alt="" /&gt;
-        &lt;img src="images/globallogic.png" alt="" /&gt;
-        &lt;img src="images/intetics.png" alt="" /&gt;
-        &lt;img src="images/softserve.png" alt="" /&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-
-    &lt;p&gt;Відгук INCORA про випускників Okten&lt;/p&gt;
-  &lt;/section&gt;
-
-  &lt;div class="programming"&gt;
-    &lt;h2&gt;ПОПУЛЯРНІ НАПРЯМКИ&lt;/h2&gt;
-    &lt;h1&gt;КУРСІВ ПРОГРАМУВАННЯ&lt;/h1&gt;
-
-    &lt;div class="cards"&gt;
-      &lt;div class="card"&gt;
-        &lt;img src="images/js.png" alt="" /&gt;
-        &lt;h3&gt;JAVASCRIPT&lt;/h3&gt;
-        &lt;h4&gt;Комплексний курс&lt;/h4&gt;
-
-        &lt;p&gt;
-          Стартовий рівень: початківець&lt;br /&gt;Тривалість: 5-11 місяців&lt;br /&gt;Ціна
-          від 14500 грн.
-        &lt;/p&gt;
-
-        &lt;h5&gt;Залишилось 3 місця&lt;/h5&gt;
-
-        &lt;a href="#"&gt;Детальніше
-        &lt;/a&gt;
-        &lt;/div&gt;
-        &lt;div class="card"&gt;
-          &lt;img src="images/java.png" alt="" /&gt;
-          &lt;h3&gt;JAVA&lt;/h3&gt;
-          &lt;h4&gt;Комплексний курс&lt;/h4&gt;
-    
-          &lt;p&gt;
-            Стартовий рівень: початківець&lt;br /&gt;Тривалість: 6-11 місяців&lt;br /&gt;Ціна
-            від 14500 грн.
-          &lt;/p&gt;
-    
-          &lt;h5&gt;Залишилось 6 місць&lt;/h5&gt;
-    
-          &lt;a href="#"&gt;Детальніше&lt;/a&gt;
-        &lt;/div&gt;
-        &lt;div class="card"&gt;
-          &lt;img src="images/python.png" alt="" /&gt;
-          &lt;h3&gt;PYTHON&lt;/h3&gt;
-          &lt;h4&gt;Комплексний курс&lt;/h4&gt;
-    
-          &lt;p&gt;
-            Стартовий рівень: початківець&lt;br /&gt;Тривалість: 6-11 місяців&lt;br /&gt;Ціна
-            від 14500 грн.
-          &lt;/p&gt;
-    
-          &lt;h5&gt;Залишилось 4 місця&lt;/h5&gt;
-    
-          &lt;a href="#"&gt;Детальніше&lt;/a&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
+    &lt;/p&gt;<br/>
+    <br/>
+    &lt;div class="work-feedbacks"&gt;<br/>
+      &lt;img src="images/feedbacks.png" alt="" /&gt;<br/>
+      <br/>
+      &lt;div class="companies"&gt;<br/>
+        &lt;img src="images/epam.png" alt="" /&gt;<br/>
+        &lt;img src="images/incoria.png" alt="" /&gt;<br/>
+        &lt;img src="images/binariks.png" alt="" /&gt;<br/>
+        &lt;img src="images/rolique.png" alt="" /&gt;<br/>
+        &lt;img src="images/eleks.png" alt="" /&gt;<br/>
+        &lt;img src="images/globallogic.png" alt="" /&gt;<br/>
+        &lt;img src="images/intetics.png" alt="" /&gt;<br/>
+        &lt;img src="images/softserve.png" alt="" /&gt;<br/>
+      &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+    <br/>
+    &lt;p&gt;Відгук INCORA про випускників Okten&lt;/p&gt;<br/>
+  &lt;/section&gt;<br/>
+  <br/>
+  &lt;div class="programming"&gt;<br/>
+    &lt;h2&gt;ПОПУЛЯРНІ НАПРЯМКИ&lt;/h2&gt;<br/>
+    &lt;h1&gt;КУРСІВ ПРОГРАМУВАННЯ&lt;/h1&gt;<br/>
+    <br/>
+    &lt;div class="cards"&gt;<br/>
+      &lt;div class="card"&gt;<br/>
+        &lt;img src="images/js.png" alt="" /&gt;<br/>
+        &lt;h3&gt;JAVASCRIPT&lt;/h3&gt;<br/>
+        &lt;h4&gt;Комплексний курс&lt;/h4&gt;<br/>
+        <br/>
+        &lt;p&gt;<br/>
+          Стартовий рівень: початківець&lt;br /&gt;Тривалість: 5-11 місяців&lt;br /&gt;Ціна<br/>
+          від 14500 грн.<br/>
+        &lt;/p&gt;<br/>
+        <br/>
+        &lt;h5&gt;Залишилось 3 місця&lt;/h5&gt;<br/>
+        <br/>
+        &lt;a href="#"&gt;Детальніше<br/>
+        &lt;/a&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="card"&gt;<br/>
+          &lt;img src="images/java.png" alt="" /&gt;<br/>
+          &lt;h3&gt;JAVA&lt;/h3&gt;<br/>
+          &lt;h4&gt;Комплексний курс&lt;/h4&gt;<br/>
+          <br/>
+          &lt;p&gt;<br/>
+            Стартовий рівень: початківець&lt;br /&gt;Тривалість: 6-11 місяців&lt;br /&gt;Ціна<br/>
+            від 14500 грн.<br/>
+          &lt;/p&gt;<br/>
+          <br/>
+          &lt;h5&gt;Залишилось 6 місць&lt;/h5&gt;<br/>
+          <br/>
+          &lt;a href="#"&gt;Детальніше&lt;/a&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="card"&gt;<br/>
+          &lt;img src="images/python.png" alt="" /&gt;<br/>
+          &lt;h3&gt;PYTHON&lt;/h3&gt;<br/>
+          &lt;h4&gt;Комплексний курс&lt;/h4&gt;<br/>
+          <br/>
+          &lt;p&gt;<br/>
+            Стартовий рівень: початківець&lt;br /&gt;Тривалість: 6-11 місяців&lt;br /&gt;Ціна<br/>
+            від 14500 грн.<br/>
+          &lt;/p&gt;<br/>
+          <br/>
+          &lt;h5&gt;Залишилось 4 місця&lt;/h5&gt;<br/>
+          <br/>
+          &lt;a href="#"&gt;Детальніше&lt;/a&gt;<br/>
+        &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
     </main>
   `,
   CSS: `
-  nav ul {
-    display: flex;
-    justify-content: space-evenly;
-  }
-
-  nav ul li {
-    background-color: black;
-    font-size: 1.5rem;
-    list-style: none;
-    padding: 15px;
-  }
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-  }
-
-  nav ul li select {
-    color: white;
-    background-color: black;
-    border: none;
-    font-size: 1.5rem;
-    margin: auto 50px;
-  }
-  .courses {
-    display: flex;
-    justify-content: space-between;
-    margin: 50px;
-  }
-
-  .guarantee span {
-    color: rgb(33, 59, 206);
-  }
-
-  .guarantee p {
-    width: 400px;
-  }
-
-  section {
-    background-color: rgb(234, 242, 245);
-  }
-
-  section h1 {
-    color: orange;
-  }
-
-  section h1,
-  section h2 {
-    text-align: center;
-  }
-
-  section &gt; p:first-of-type {
-    width: 500px;
-    margin: 0 auto 20px;
-  }
-
-  section &gt; p:last-of-type {
-    margin: 20px;
-  }
-
-  .work-feedbacks {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  .work-feedbacks * {
-    margin: 0 20px;
-  }
-  .programming h2 {
-    color: white;
-  }
-
-  .programming h1,
-  .programming h2 {
-    text-align: center;
-  }
-
-  .programming h1 {
-    color: orange;
-  }
-
-  .programming {
-    background-color: rgb(27, 27, 27);
-  }
-
-  .cards {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  .card {
-    width: 350px;
-    height: 400px;
-    border: 1px solid rgb(72, 72, 72);
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .card img {
-    margin: 10px auto;
-  }
-
-  .card h3 {
-    color: white;
-  }
-
-  .card h4 {
-    color: orange;
-  }
-
-  .card h5 {
-    color: rgb(112, 133, 153);
-  }
-
-  .card p {
-    color: white;
-  }
-
-  .card a {
-    margin: auto 0;
-    height: 100%;
-    border: 1px solid rgb(72, 72, 72);
-    width: 100%;
-    text-align: center;
-    color: white;
-    border-radius: 0 0 20px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
-    text-decoration: none;
-  }
+  nav ul {<br/>
+    display: flex;<br/>
+    justify-content: space-evenly;<br/>
+  }<br/>
+  <br/>
+  nav ul li {<br/>
+    background-color: black;<br/>
+    font-size: 1.5rem;<br/>
+    list-style: none;<br/>
+    padding: 15px;<br/>
+  }<br/>
+  nav ul li a {<br/>
+    color: white;<br/>
+    text-decoration: none;<br/>
+  }<br/>
+  <br/>
+  nav ul li select {<br/>
+    color: white;<br/>
+    background-color: black;<br/>
+    border: none;<br/>
+    font-size: 1.5rem;<br/>
+    margin: auto 50px;<br/>
+  }<br/>
+  .courses {<br/>
+    display: flex;<br/>
+    justify-content: space-between;<br/>
+    margin: 50px;<br/>
+  }<br/>
+  <br/>
+  .guarantee span {<br/>
+    color: rgb(33, 59, 206);<br/>
+  }<br/>
+  <br/>
+  .guarantee p {<br/>
+    width: 400px;<br/>
+  }<br/>
+  <br/>
+  section {<br/>
+    background-color: rgb(234, 242, 245);<br/>
+  }<br/>
+  <br/>
+  section h1 {<br/>
+    color: orange;<br/>
+  }<br/>
+  <br/>
+  section h1,<br/>
+  section h2 {<br/>
+    text-align: center;<br/>
+  }<br/>
+  <br/>
+  section &gt; p:first-of-type {<br/>
+    width: 500px;<br/>
+    margin: 0 auto 20px;<br/>
+  }<br/>
+  <br/>
+  section &gt; p:last-of-type {<br/>
+    margin: 20px;<br/>
+  }<br/>
+  <br/>
+  .work-feedbacks {<br/>
+    display: flex;<br/>
+    justify-content: space-around;<br/>
+  }<br/>
+  <br/>
+  .work-feedbacks * {<br/>
+    margin: 0 20px;<br/>
+  }<br/>
+  .programming h2 {<br/>
+    color: white;<br/>
+  }<br/>
+  <br/>
+  .programming h1,<br/>
+  .programming h2 {<br/>
+    text-align: center;<br/>
+  }<br/>
+  <br/>
+  .programming h1 {<br/>
+    color: orange;<br/>
+  }<br/>
+  <br/>
+  .programming {<br/>
+    background-color: rgb(27, 27, 27);<br/>
+  }<br/>
+  <br/>
+  .cards {<br/>
+    display: flex;<br/>
+    justify-content: space-around;<br/>
+  }<br/>
+  <br/>
+  .card {<br/>
+    width: 350px;<br/>
+    height: 400px;<br/>
+    border: 1px solid rgb(72, 72, 72);<br/>
+    border-radius: 20px;<br/>
+    display: flex;<br/>
+    flex-direction: column;<br/>
+    align-items: center;<br/>
+  }<br/>
+  <br/>
+  .card img {<br/>
+    margin: 10px auto;<br/>
+  }<br/>
+  <br/>
+  .card h3 {<br/>
+    color: white;<br/>
+  }<br/>
+  <br/>
+  .card h4 {<br/>
+    color: orange;<br/>
+  }<br/>
+  <br/>
+  .card h5 {<br/>
+    color: rgb(112, 133, 153);<br/>
+  }<br/>
+  <br/>
+  .card p {<br/>
+    color: white;<br/>
+  }<br/>
+  <br/>
+  .card a {<br/>
+    margin: auto 0;<br/>
+    height: 100%;<br/>
+    border: 1px solid rgb(72, 72, 72);<br/>
+    width: 100%;<br/>
+    text-align: center;<br/>
+    color: white;<br/>
+    border-radius: 0 0 20px 20px;<br/>
+    display: flex;<br/>
+    justify-content: center;<br/>
+    align-items: center;<br/>
+    font-size: 1rem;<br/>
+    text-decoration: none;<br/>
+  }<br/>
   `,
   Conclusion: `
   У ході виконання лабораторної роботи ми отримали практичні навички роботи 
