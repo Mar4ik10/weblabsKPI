@@ -980,11 +980,255 @@ AdaptiveExample:`<div class="nav">
   </ul></div>`
 }
 
+let lab5 = {
+  Theme: `<style>
+  .center {
+    text-align: center;
+  }
+  </style>
+  <div class="center">
+    <h1>Тема</h1>
+    <p>
+      ФУНКЦІОНАЛЬНЕ ЗАСТОСУВАННЯ JAVASCRIPT У HTML-ДОКУМЕНТІ. ВИКОРИСТАННЯ
+      МАСИВІВ У JS-СЦЕНАРІЯХ. РЕАЛІЗАЦІЯ ПРОГРАМ ЗАСОВАМИ МОВИ JAVASCRIPT
+    </p>
+    <h1 style="margin-top: 15px">Мета</h1>
+    <p>
+      придбати практичні навички роботи з масивами у js-сценаріях.
+      Реалізація програм засовами мови JAVASCRIPT
+    </p>
+  </div>`,
+
+  ConnectJS: `<div style="margin: 20px">
+  <h1>Застосування JavaScript в HTML</h1>
+
+  <ol>
+    <li>
+      Схема URL:
+      <ul>
+        <li>
+          Вбудований JavaScript у URL для створення закладок з
+          попередньо заповненими полями форми:
+
+          <pre>
+&lt;a href=&quot;javascript:void(prompt(&#39;Enter your name:&#39;, &#39;John Doe&#39;));&quot;&gt;Click to enter your name&lt;/a&gt;
+          </pre>
+        </li>
+
+        <li>Виклик функції JavaScript за допомогою URL:</li>
+        <pre>
+javascript:alert('Hello, World!');
+        </pre>
+      </ul>
+    </li>
+    <li>
+      Обробник подій:
+      <ul>
+        <li>
+          Обробка події натискання кнопки
+          <pre>
+&lt;button onclick=&quot;alert(&#39;Button clicked!&#39;)&quot;&gt;Click me&lt;/button&gt;
+          </pre>
+        </li>
+        <li>
+          Обробка події наведення миші на елемент:
+          <pre>
+&lt;img src=&quot;image.jpg&quot; onmouseover=&quot;alert(&#39;Mouse over image!&#39;)&quot; /&gt;
+</pre
+          >
+        </li>
+      </ul>
+    </li>
+    <li>
+      Підстановка (enitty):
+      <ul>
+        <li>
+          Виведення динамічної інформації на сторінці за допомогою
+          JavaScript:
+          <pre>
+&lt;p id=&quot;dynamicContent&quot;&gt;&lt;/p&gt;
+&lt;script&gt;
+document.getElementById(&quot;dynamicContent&quot;).innerText = &quot;Current date: &quot; + new Date();
+&lt;/script&gt;
+            </pre
+          >
+        </li>
+      </ul>
+    </li>
+    <li>
+      Вставка (тег SCRIPT):
+      <ul>
+        <li>
+          Вбудований JavaScript:
+          <pre>
+&lt;script&gt;
+console.log(&quot;Hello, World!&quot;);
+&lt;/script&gt;
+        </pre
+          >
+        </li>
+        <li>
+          Підключення зовнішнього JavaScript-файлу:
+          <pre>
+&lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
+          </pre>
+        </li>
+      </ul>
+    </li>
+  </ol>
+</div>`,
+
+  TaskOne: `
+  <h1>Code</h1>
+  <pre>
+  console.log("Завдання 1");
+  const inputArray = [10, 2, 6, 2, 8, 12, 25, 32];
+  
+  function buildArray(array) {
+      const arrayA = [];
+      const arrayB = [];
+      const arrayC = [];
+  
+      array.forEach(num => {
+          if (num % 2 == 0 && num % 3) {
+              arrayB.push(num);
+          }
+  
+          else if (num % 2 == 0) {
+              arrayA.push(num);
+          }
+  
+          else if (num % 3 == 0) {
+              arrayC.push(num)
+          }
+      });
+  
+      return [...arrayA, ...arrayB, ...arrayC]
+  }
+  
+  const newArray = buildArray(inputArray);
+  console.log('Початковий масив - $(inputArray)');
+  console.log('Новий масив - $(newArray)');
+  
+  console.log("Завдання 2");
+  
+  
+  function quickSort(array, start, end) {
+      if (start >= end) {
+          return;
+      }
+  
+      let pivot = partition(array, start, end);
+      quickSort(array, start, pivot - 1);
+      quickSort(array, pivot + 1, end);
+  }
+  
+  function partition(array, start, end) {
+      let pivot = array[end];
+  
+      let i = start - 1
+  
+      for (var j = start; j <= end - 1; j++) {
+          if (array[j] < pivot) {
+              i++;
+              [array[i], array[j]] = [array[j], array[i]];
+          }
+      }
+      i++;
+      [array[i], array[j]] = [array[j], array[i]];
+      return i;
+  }
+  console.log('Перед сортуванням -  $(newArray)');
+  quickSort(newArray, 0, newArray.length - 1)
+  console.log('Після сортування - $(newArray)');
+  </pre>`,
+  TaskTwo: `<h1>Autocomplete Example</h1>
+  <input type="text" id="inputField" placeholder="Enter text..." />
+  <div id="autocompleteContainer" class="autocomplete-container"></div>
+  <br/>
+  <br/>
+  <h1>Код</h1>
+  <pre>
+  <code>
+  const inputField = document.getElementById(&quot;inputField&quot;);
+  const autocompleteContainer = document.getElementById(&quot;autocompleteContainer&quot;);
+  
+  // List of autocomplete words
+  const autocompleteWords = [
+      &quot;apple&quot;,
+      &quot;banana&quot;,
+      &quot;cherry&quot;,
+      &quot;grape&quot;,
+      &quot;kiwi&quot;,
+      &quot;orange&quot;,
+      &quot;pear&quot;,
+      &quot;arrange&quot;,
+  ];
+  
+  inputField.addEventListener(&quot;input&quot;, function () {
+  const inputText = this.value.toLowerCase();
+  console.log(this);
+  let suggestions = [];
+  
+  if (inputText) {
+      suggestions = autocompleteWords.filter((word) =&gt;
+      word.startsWith(inputText)
+      );
+  }
+  
+  displaySuggestions(suggestions);
+  });
+  
+  function displaySuggestions(suggestions) {
+  if (suggestions.length === 0) {
+      autocompleteContainer.innerHTML = &quot;&quot;;
+      return;
+  }
+  
+  const html = suggestions
+      .map(
+      (suggestion) =&gt;
+          '&lt;div class=&quot;autocomplete-item&quot;&gt;$(suggestion)&lt;/div&gt;'
+      )
+      .join(&quot;&quot;);
+  autocompleteContainer.innerHTML = html;
+  
+  const autocompleteItems =
+      document.querySelectorAll(&quot;.autocomplete-item&quot;);
+  autocompleteItems.forEach((item) =&gt; {
+      item.addEventListener(&quot;click&quot;, function () {
+      inputField.value = this.textContent;
+      autocompleteContainer.innerHTML = &quot;&quot;;
+      });
+  });
+  }
+  </code>
+  </pre>`,
+
+  Conclusion: `
+  <div style="margin:20px;">
+  <h1>Висновок</h1>
+
+  <ul style="margin-top: 20px">
+      <li>Підключення JavaScript до HTML можна здійснити за допомогою тегу <code>&lt;script&gt;</code> для вбудовування скрипту безпосередньо у HTML-документ.</li>
+      <li>Також можна зберігати JavaScript у окремих файлах та підключати їх за допомогою атрибуту <code>src</code>, що сприяє збереженню структури проекту та підвищує його читабельність.</li>
+      <li>Використання вбудованих скриптів дозволяє просто та швидко розробляти сторінки, тоді як зовнішні файли сприяють кращій організації коду та підтримці проекту.</li>
+  </ul></div>`
+  
+}
+
 let currentelement;
 let lastelement;
 
 let containing = document.getElementsByTagName("section")[0];
-console.log(containing);
+
+function insertScript(srcPath) {
+  const script = document.createElement(`script`);
+  script.src = srcPath;
+
+  containing.appendChild(script);
+}
+
 
 function displaylabbuttons(buttonid) {
   if (lastelement) {
@@ -999,96 +1243,118 @@ function displaylabbuttons(buttonid) {
 
 
 function displayinfo(button) {
-    let parentelement = button.parentNode.id;
-    var classelementName = button.className.split(' ')[1]
-    
-    containing.innerHTML = "";
-
-    switch (parentelement) {
-        case "aside-button-lab1":
-          if (classelementName == "aside-button1") {
-            containing.innerHTML = lab1.Opys;
-          }
-          else if (classelementName == "aside-button2"){
-            containing.innerHTML = lab1.Theme;
-          }
-          else if (classelementName == "aside-button3"){
-            containing.innerHTML = lab1.Structure.Table + "\n" +lab1.Structure.Form + "\n" + lab1.Structure.Image;
-
-          }
-          else if (classelementName == "aside-button4"){
-            containing.innerHTML = lab1.Conclusion;
-          }
-          break;
-
-          case "aside-button-lab2":
-            if (classelementName == "aside-button1") {
-              containing.innerHTML = lab2.Theme;
-            }
-            else if (classelementName == "aside-button2"){
-              containing.innerHTML = lab2.Opys;
-            }
-            else if (classelementName == "aside-button3"){
-              containing.innerHTML = lab2.Selectors.Tags + "\n" +lab2.Selectors.Classes + "\n" + lab2.Selectors.Ids;
+  let parentelement = button.parentNode.id;
+  var classelementName = button.className.split(' ')[1]
   
-            }
-            else if (classelementName == "aside-button4"){
-              containing.innerHTML = lab2.CSS;
-            }
-            else if (classelementName == "aside-button5"){
-              containing.innerHTML = lab2.Conclusion;
-            }
-            break;
+  containing.innerHTML = "";
 
-          case "aside-button-lab3":
-            if (classelementName == "aside-button1") {
-              containing.innerHTML = lab3.Theme;
-            }
-            else if (classelementName == "aside-button2"){
-              containing.innerHTML = lab3.Maket;
-            }
-            else if (classelementName == "aside-button3"){
-              containing.innerHTML = lab3.FixedTable
-            }
-            else if (classelementName == "aside-button4"){
-              containing.innerHTML = lab3.FlexibleTable;
-            }
-            else if (classelementName == "aside-button5"){
-              containing.innerHTML = lab3.FixedDiv;
-            }
-            else if (classelementName == "aside-button6"){
-              containing.innerHTML = lab3.FlexibleDiv;
-            }
-            else if (classelementName == "aside-button7"){
-              containing.innerHTML = lab3.IMG;
-            }
-            else if (classelementName == "aside-button8"){
-              containing.innerHTML = lab3.HTML;
-            }
-            else if (classelementName == "aside-button9"){
-              containing.innerHTML = lab3.CSS;
-            }
-            else if (classelementName == "aside-button10"){
-              containing.innerHTML = lab3.Conclusion;
-            }
-            break;
+  switch (parentelement) {
+    case "aside-button-lab1":
+      if (classelementName == "aside-button1") {
+        containing.innerHTML = lab1.Opys;
+      }
+      else if (classelementName == "aside-button2"){
+        containing.innerHTML = lab1.Theme;
+      }
+      else if (classelementName == "aside-button3"){
+        containing.innerHTML = lab1.Structure.Table + "\n" +lab1.Structure.Form + "\n" + lab1.Structure.Image;
 
-            case "aside-button-lab4":
-              if (classelementName == "aside-button1") {
-                containing.innerHTML = lab4.Theme;
-              }
+      }
+      else if (classelementName == "aside-button4"){
+        containing.innerHTML = lab1.Conclusion;
+      }
+      break;
 
-              else if (classelementName == "aside-button2") {
-                containing.innerHTML = lab4.ExplanationAdaptive;
-              }
+    case "aside-button-lab2":
+      if (classelementName == "aside-button1") {
+        containing.innerHTML = lab2.Theme;
+      }
+      else if (classelementName == "aside-button2"){
+        containing.innerHTML = lab2.Opys;
+      }
+      else if (classelementName == "aside-button3"){
+        containing.innerHTML = lab2.Selectors.Tags + "\n" +lab2.Selectors.Classes + "\n" + lab2.Selectors.Ids;
 
-              else if (classelementName == "aside-button3") {
-                containing.innerHTML = lab4.AdaptiveExample;
-              }
-              
-              else if (classelementName == "aside-button4"){
-                containing.innerHTML = lab4.Conclusion;
-              }
-            }
+      }
+      else if (classelementName == "aside-button4"){
+        containing.innerHTML = lab2.CSS;
+      }
+      else if (classelementName == "aside-button5"){
+        containing.innerHTML = lab2.Conclusion;
+      }
+      break;
 
+    case "aside-button-lab3":
+      if (classelementName == "aside-button1") {
+        containing.innerHTML = lab3.Theme;
+      }
+      else if (classelementName == "aside-button2"){
+        containing.innerHTML = lab3.Maket;
+      }
+      else if (classelementName == "aside-button3"){
+        containing.innerHTML = lab3.FixedTable
+      }
+      else if (classelementName == "aside-button4"){
+        containing.innerHTML = lab3.FlexibleTable;
+      }
+      else if (classelementName == "aside-button5"){
+        containing.innerHTML = lab3.FixedDiv;
+      }
+      else if (classelementName == "aside-button6"){
+        containing.innerHTML = lab3.FlexibleDiv;
+      }
+      else if (classelementName == "aside-button7"){
+        containing.innerHTML = lab3.IMG;
+      }
+      else if (classelementName == "aside-button8"){
+        containing.innerHTML = lab3.HTML;
+      }
+      else if (classelementName == "aside-button9"){
+        containing.innerHTML = lab3.CSS;
+      }
+      else if (classelementName == "aside-button10"){
+        containing.innerHTML = lab3.Conclusion;
+      }
+      break;
+
+    case "aside-button-lab4":
+      if (classelementName == "aside-button1") {
+        containing.innerHTML = lab4.Theme;
+      }
+
+      else if (classelementName == "aside-button2") {
+        containing.innerHTML = lab4.ExplanationAdaptive;
+      }
+
+      else if (classelementName == "aside-button3") {
+        containing.innerHTML = lab4.AdaptiveExample;
+      }
+      
+      else if (classelementName == "aside-button4"){
+        containing.innerHTML = lab4.Conclusion;
+      }
+      break;
+
+    case "aside-button-lab5":
+      if (classelementName == "aside-button1") {
+        containing.innerHTML = lab5.Theme;
+      }
+
+      else if (classelementName == "aside-button2") {
+        containing.innerHTML = lab5.ConnectJS;
+      }
+
+      else if (classelementName == "aside-button3") {
+        containing.innerHTML = lab5.TaskOne;
+        insertScript("scripts/lab5task1.js");
+      }
+      
+      else if (classelementName == "aside-button4"){
+        containing.innerHTML = lab5.TaskTwo;
+        insertScript("scripts/lab5Task2.js")
+      }
+      else if (classelementName == "aside-button5"){
+        containing.innerHTML = lab5.Conclusion;
+      }
+    }
 }

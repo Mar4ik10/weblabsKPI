@@ -234,8 +234,121 @@
             Висновок
           </button>
         </div>
+        <div id="aside-button-lab5" style="display: none">
+          <button
+            class="aside-button aside-button1"
+            onclick="displayinfo(this)"
+          >
+            Тема Мета Місце розташування лаби №5
+          </button>
+          <button
+            class="aside-button aside-button2"
+            onclick="displayinfo(this)"
+          >
+            Способи функціонального
+            <br />
+            застосування Javascript
+          </button>
+          <button
+            class="aside-button aside-button3"
+            onclick="displayinfo(this)"
+          >
+            Масиви
+          </button>
+          <button
+            class="aside-button aside-button4"
+            onclick="displayinfo(this)"
+          >
+            Виконання 6 пункту
+          </button>
+          <button
+            class="aside-button aside-button5"
+            onclick="displayinfo(this)"
+          >
+            Висновок
+          </button>
+        </div>
       </aside>
-      <section style="font-size: 20px; margin: 20px; width: 50%"></section>
+      <section style="font-size: 20px; margin: 20px; width: 50%">
+        <div style="margin: 20px">
+          <h1>Застосування JavaScript в HTML</h1>
+
+          <ol>
+            <li>
+              Схема URL:
+              <ul>
+                <li>
+                  Вбудований JavaScript у URL для створення закладок з
+                  попередньо заповненими полями форми:
+
+                  <pre>
+&lt;a href=&quot;javascript:void(prompt(&#39;Enter your name:&#39;, &#39;John Doe&#39;));&quot;&gt;Click to enter your name&lt;/a&gt;
+                  </pre>
+                </li>
+
+                <li>Виклик функції JavaScript за допомогою URL:</li>
+                <pre>
+javascript:alert('Hello, World!');
+                </pre>
+              </ul>
+            </li>
+            <li>
+              Обробник подій:
+              <ul>
+                <li>
+                  Обробка події натискання кнопки
+                  <pre>
+&lt;button onclick=&quot;alert(&#39;Button clicked!&#39;)&quot;&gt;Click me&lt;/button&gt;
+                  </pre>
+                </li>
+                <li>
+                  Обробка події наведення миші на елемент:
+                  <pre>
+&lt;img src=&quot;image.jpg&quot; onmouseover=&quot;alert(&#39;Mouse over image!&#39;)&quot; /&gt;
+</pre
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              Підстановка (enitty):
+              <ul>
+                <li>
+                  Виведення динамічної інформації на сторінці за допомогою
+                  JavaScript:
+                  <pre>
+&lt;p id=&quot;dynamicContent&quot;&gt;&lt;/p&gt;
+&lt;script&gt;
+    document.getElementById(&quot;dynamicContent&quot;).innerText = &quot;Current date: &quot; + new Date();
+&lt;/script&gt;
+                    </pre
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              Вставка (тег SCRIPT):
+              <ul>
+                <li>
+                  Вбудований JavaScript:
+                  <pre>
+&lt;script&gt;
+    console.log(&quot;Hello, World!&quot;);
+&lt;/script&gt;
+                </pre
+                  >
+                </li>
+                <li>
+                  Підключення зовнішнього JavaScript-файлу:
+                  <pre>
+&lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
+                  </pre>
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+      </section>
     </main>
     <script src="scripts/script.js"></script>
   </body>
