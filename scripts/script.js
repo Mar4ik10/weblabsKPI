@@ -751,6 +751,234 @@ Flexbox, що буде корисним у подальшій роботі з в
 `
 }
 
+let lab4 = {
+  Theme: `<div style="text-align: center">
+  <h1>Тема:</h1>
+  <p>
+    АДАПТИВНА ВЕРСТКА. МЕДІА-ЗАПИТИ. МЕТАТЕГ VIEWPORT. СТРАТЕГІЯ MOBILE
+    FIRST.
+  </p>
+  <h1 style="margin-top: 20px">Мета:</h1>
+  <p>
+    Адаптивна верстка. Медіа-запити. Медіа-типи. Медіа-функції.Метатег
+    viewport. Інструменти розробника. Стратегія Mobile First
+  </p>
+  <h1 style="margin-top: 20px">Посилання на репозиторій:</h1>
+  <p>https://github.com/Mar4ik10/WebCoworking</p>
+</div>`,
+
+  ExplanationAdaptive: `<style>
+  div h1 {
+    margin: 20px 0 10px;
+  }
+</style>
+<div style="margin: 20px">
+  <h1>Адаптивна верстка та медіа-запити</h1>
+
+  <ul>
+    <li>
+      Адаптивна верстка - це підхід до розробки веб-сайтів, що дозволяє
+      сторінці гнучко змінюватися залежно від розміру екрану пристрою.
+      Це забезпечує оптимальне відображення контенту як на десктопах,
+      так і на мобільних пристроях.
+    </li>
+    <li>
+      Медіа-запити - це спосіб, за допомогою якого можна змінювати стилі
+      CSS в залежності від характеристик пристрою, таких як ширина
+      екрану, роздільна здатність та орієнтація. Це дозволяє створювати
+      адаптивні сайти, які оптимально відображаються на будь-яких
+      пристроях.
+    </li>
+  </ul>
+
+  <h1>Медіа-типи та медіа-функції</h1>
+
+  <ul>
+    <li>
+      Медіа-типи - це типи пристроїв, на яких відображається
+      веб-сторінка. До них можуть відноситися екрани, принтери або
+      мультимедійні пристрої. Використання медіа-типів дозволяє
+      змінювати відображення сторінки в залежності від пристрою.
+    </li>
+    <li>
+      Медіа-функції - це спеціальні функції CSS, які дозволяють
+      використовувати медіа-запити для визначення характеристик
+      пристроїв. Наприклад, функція 'min-width' вказує, які стилі будуть
+      застосовані, коли ширина екрану буде не менше вказаного значення.
+    </li>
+  </ul>
+
+  <h1>Метатег viewport та стратегія Mobile First</h1>
+
+  <ul>
+    <li>
+      Метатег viewport - це HTML-тег, який дозволяє контролювати
+      масштабування та розміри відображення веб-сторінки на мобільних
+      пристроях. Використання цього тегу допомагає забезпечити
+      оптимальне відображення контенту на різних пристроях.
+    </li>
+    <li>
+      Стратегія Mobile First - це підхід до розробки веб-сторінок, коли
+      спочатку розробляється мобільна версія сайту, а потім за потреби
+      додаються стилі для відображення на більших екранах. Цей підхід
+      дозволяє забезпечити оптимальне відображення контенту на мобільних
+      пристроях, які дедалі більш популярні.
+    </li>
+  </ul>
+</div>`,
+
+AdaptiveExample:`<div class="nav">
+  <h2>Navbar десктопна версія</h2>
+  <img src="images/adaptive/navbardesktop.png" alt="" />
+
+  <br />
+  <h2>Navbar планшетна версія</h2>
+  <img src="images/adaptive/navbartablet.png" alt="" />
+  <br />
+  <h2>Navbar мобільна версія</h2>
+  <img src="images/adaptive/navbarmobile.png" alt="" />
+  <br />
+
+  <pre>
+    <code>
+      @media screen and (max-width: 730px) {
+        /* Перша зміна: показати іконку меню */
+        .nav-buttons .icon {
+            display: block;
+        }
+    
+        /* Друга зміна: змінити відображення елементів навігації */
+        .nav-buttons.responsive {
+            position: relative;
+        }
+        .nav-buttons.responsive.nav-buttons ul {
+            display: flex;
+            flex-direction: column;
+        }
+        .nav-buttons.responsive li {
+            flex-direction: column;
+            display: block;
+            text-align: right;
+        }
+        /* Третя зміна: зміна порядку відображення кнопки */
+        .target {
+            order: -1;
+        }
+        /* Четверта зміна: змінити розміри іконки меню */
+        .icon {
+            width: 20px;
+            float: right;
+        }
+    }
+    
+    @media screen and (max-width: 670px) {
+        /* П'ята зміна: зміна розмірів і позиціонування елементів навбару */
+        .nav-buttons.responsive.nav-buttons ul {
+            display: flex;
+            flex-direction: column;
+        }
+        .nav-buttons.responsive li {
+            flex-direction: column;
+            display: block;
+            text-align: right;
+        }
+    }
+  </code>
+  </pre>
+  </div>
+  <br />
+  <br />
+  <div class="circles">
+  <h1>Circles</h1>
+  <img src="images/adaptive/circledesktop.png" alt="" />
+  <img src="images/adaptive/circletabletmobile.png" alt="" />
+
+  <pre>
+    <code>
+      @media screen and (max-width: 900px) {
+        /* Зміни для класу .circle */
+        .circle {
+            width: 100px;
+            height: 100px;
+            font-size: 0.6rem;
+        }
+      }
+
+      @media screen and (max-width: 730px) {
+          /* Зміни для класу .circles */
+          .circles {
+              flex-direction: row;
+          }
+      }
+    </code>
+  </pre>
+  </div>
+  <br />
+  <br />
+  <div class="footer">
+  <h1>Footer</h1>
+  <img src="images/adaptive/footerdesktop.png" alt="" />
+  <img src="images/adaptive/footertabletmobile.png" alt="" />
+  <pre>
+    <code>
+      @media screen and (max-width: 1000px) {
+        /* Зміни для .footer-upper-row */
+        .footer-upper-row h1 {
+            font-size: 1.6rem;
+        }
+    
+        /* Зміни для .footer-butons */
+        .footer-upper-row .footer-butons a {
+            font-size: 1.1rem;
+        }
+    
+        /* Зміни для .footer-icons img */
+        .footer-upper-row .footer-icons img {
+            height: 30px;
+            width: auto;
+        }
+      }
+      
+      @media screen and (max-width: 900px) {
+          /* Зміни для .contact-place */
+          .contact-place {
+              margin-bottom: 30px;
+          }
+      
+          /* Зміни для .circle */
+          .circle {
+              width: 100px;
+              height: 100px;
+              font-size: 0.6rem;
+          }
+      }
+    </code>
+  </pre>
+  </div>`,
+  Conclusion: `<div style="margin: 20px"><h1>Висновок</h1>
+
+  <ul>
+    <li>
+      Адаптивна верстка та медіа-запити дозволяють створювати веб-сайти,
+      які автоматично пристосовуються до різних розмірів екрану
+      користувачів.
+    </li>
+    <li>
+      Використання медіа-типів та медіа-функцій допомагає визначати
+      характеристики пристроїв та застосовувати відповідні стилі.
+    </li>
+    <li>
+      Метатег viewport встановлює параметри відображення сторінки на
+      мобільних пристроях, забезпечуючи правильне масштабування та
+      розміщення елементів.
+    </li>
+    <li>
+      Стратегія Mobile First рекомендує спочатку розробляти версію сайту
+      для мобільних пристроїв, що дозволяє забезпечити оптимальний досвід
+      для користувачів на всіх пристроях.
+    </li>
+  </ul></div>`
+}
 
 let currentelement;
 let lastelement;
@@ -844,5 +1072,23 @@ function displayinfo(button) {
               containing.innerHTML = lab3.Conclusion;
             }
             break;
+
+            case "aside-button-lab4":
+              if (classelementName == "aside-button1") {
+                containing.innerHTML = lab4.Theme;
+              }
+
+              else if (classelementName == "aside-button2") {
+                containing.innerHTML = lab4.ExplanationAdaptive;
+              }
+
+              else if (classelementName == "aside-button3") {
+                containing.innerHTML = lab4.AdaptiveExample;
+              }
+              
+              else if (classelementName == "aside-button4"){
+                containing.innerHTML = lab4.Conclusion;
+              }
             }
+
 }

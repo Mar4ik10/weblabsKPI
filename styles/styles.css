@@ -41,12 +41,12 @@ aside {
 #aside-button-lab1, 
 #aside-button-lab2,
 #aside-button-lab3,
-#aside-buttons-lab4, 
-#aside-buttons-lab5, 
-#aside-buttons-lab6, 
-#aside-buttons-lab7,
-#aside-buttons-lab8,
-#aside-buttons-lab8 {
+#aside-button-lab4, 
+#aside-button-lab5, 
+#aside-button-lab6, 
+#aside-button-lab7,
+#aside-button-lab8,
+#aside-button-lab8 {
     display: flex;
     flex-direction: column;
 
