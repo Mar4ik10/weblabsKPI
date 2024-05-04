@@ -1,7 +1,6 @@
 const inputField = document.getElementById("inputField");
 const autocompleteContainer = document.getElementById("autocompleteContainer");
 
-// List of autocomplete words
 const autocompleteWords = [
     "apple",
     "banana",

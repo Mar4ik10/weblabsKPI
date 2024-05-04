@@ -997,6 +997,8 @@ let lab5 = {
       придбати практичні навички роботи з масивами у js-сценаріях.
       Реалізація програм засовами мови JAVASCRIPT
     </p>
+    <h1 style="margin-top: 20px">Посилання на репозиторій:</h1>
+    <p>https://github.com/Mar4ik10/WebCoworking</p>
   </div>`,
 
   ConnectJS: `<div style="margin: 20px">
@@ -1214,7 +1216,210 @@ console.log(&quot;Hello, World!&quot;);
       <li>Також можна зберігати JavaScript у окремих файлах та підключати їх за допомогою атрибуту <code>src</code>, що сприяє збереженню структури проекту та підвищує його читабельність.</li>
       <li>Використання вбудованих скриптів дозволяє просто та швидко розробляти сторінки, тоді як зовнішні файли сприяють кращій організації коду та підтримці проекту.</li>
   </ul></div>`
+};
+
+let lab6 = {
+  Theme: `<style>
+  .center {
+    text-align: center;
+  }
+  </style>
+  <div class="center">
+    <h1>Тема</h1>
+    <p>
+      ФУНКЦІОНАЛЬНЕ ЗАСТОСУВАННЯ JAVASCRIPT У HTML-ДОКУМЕНТІ. ВИКОРИСТАННЯ
+      МАСИВІВ У JS-СЦЕНАРІЯХ. РЕАЛІЗАЦІЯ ПРОГРАМ ЗАСОВАМИ МОВИ JAVASCRIPT
+    </p>
+    <h1 style="margin-top: 15px">Мета</h1>
+    <p>
+      придбати практичні навички роботи з масивами у js-сценаріях.
+      Реалізація програм засовами мови JAVASCRIPT
+    </p>
+    <h1 style="margin-top: 20px">Посилання на репозиторій:</h1>
+    <p>https://github.com/Mar4ik10/WebCoworking</p>
+  </div>`,
+
+  TaskOne: `
+  <pre>
+  function createProduct(obj, callback) {
+    const productId = generateProductId();
+    const product = { ...obj, id: productId };
+    callback(product);
+  }
   
+  function logProduct(product) {
+    console.log(&quot;Product:&quot;, product);
+  }
+  
+  function logTotalPrice(product) {
+    const totalPrice = calculateTotalPrice(product);
+    console.log(&quot;Total Price:&quot;, totalPrice);
+  }
+  
+  function generateProductId() {
+    return Math.random().toString(36).substring(2, 10); 
+  }
+  
+  function calculateTotalPrice(product) {
+    return product.price * product.quantity;
+  }
+  
+  const productData = {
+    name: &quot;Товар 1&quot;,
+    price: 10,
+    quantity: 2
+  };
+  
+  createProduct(productData, logProduct);
+  
+  createProduct(productData, logTotalPrice);
+  </pre>
+  `,
+  TaskThree: `
+  <pre>
+  const medicines = {
+    "Агалгін": new Date("2022-05-01"),
+    "Ношпа": new Date("2025-07-02"),
+    "Альфахолін": new Date("2024-12-21"),
+    "Аспірин": new Date("2022-08-15"),
+    "Аспаркам": new Date("2024-04-18"),
+};
+
+const medicineNames = Object.keys(medicines);
+
+const currentDate = new Date();
+const sortedMedicines = medicineNames
+    .filter(medicine => medicines[medicine] > currentDate)
+    .sort((a, b) => medicines[a] - medicines[b]);
+
+console.log(sortedMedicines);
+
+  </pre>`,
+  TaskFive: `
+  <pre>const fruits = [
+    { name: "apple", price: 200 },
+    { name: "orange", price: 300 },
+    { name: "grapes", price: 750 },
+  ];
+  
+  function applyDiscountAndAddId(products) {
+    const generateId = () => Math.random().toString(36).substring(2, 10);
+  
+    const discountedProducts = products.map((product, index) => ({
+      ...product,
+      id: generateId(),
+      price: product.price * 0.8,
+    }));
+  
+    return discountedProducts;
+  }
+  
+  const discountedFruits = applyDiscountAndAddId(fruits);
+  console.log(discountedFruits);
+  </pre>
+  `,
+  TaskSeven: `
+  <pre>class Client {
+    #login;
+    #email;
+  
+    constructor(login, email) {
+      this.#login = login;
+      this.#email = email;
+    }
+  
+    get login() {
+      return this.#login;
+    }
+  
+    set login(newLogin) {
+      this.#login = newLogin;
+    }
+  
+    get email() {
+      return this.#email;
+    }
+  
+    set email(newEmail) {
+      this.#email = newEmail;
+    }
+  }
+  
+  const client = new Client("user123", "user123@example.com");
+  
+  console.log(client.login);
+  console.log(client.email);
+  
+  client.login = "newUser";
+  client.email = "newuser@example.com";
+  
+  console.log(client.login);
+  console.log(client.email);
+  </pre>`,
+
+  TaskNine : `
+  <pre>const tweets = [
+    { id: "000", likes: 5, tags: ["js", "nodejs"] },
+    { id: "001", likes: 2, tags: ["html", "css"] },
+    { id: "002", likes: 17, tags: ["html", "js", "nodejs"] },
+    { id: "003", likes: 8, tags: ["css", "react"] },
+    { id: "004", likes: 0, tags: ["js", "nodejs", "react"] },
+  ];
+  
+  const tagCounts = tweets.reduce((acc, tweet) => {
+    tweet.tags.forEach(tag => {
+      acc[tag] = (acc[tag] || 0) + 1;
+    });
+    return acc;
+  }, {});
+  
+  console.log(tagCounts);
+  </pre>`,
+  
+  TaskTen: `<pre>
+  function checkBrackets(str) {
+    const stack = [];
+    const openingBrackets = ['(', '{', '['];
+    const closingBrackets = [')', '}', ']'];
+    const bracketPairs = {
+        ')': '(',
+        '}': '{',
+        ']': '['
+    };
+  
+    for (let char of str) {
+        if (openingBrackets.includes(char)) {
+            stack.push(char);
+        } else if (closingBrackets.includes(char)) {
+            const lastOpeningBracket = stack.pop();
+            if (lastOpeningBracket !== bracketPairs[char]) {
+                return false;
+            }
+        }
+    }
+  
+    return stack.length === 0;
+  }
+  
+  const sometext = '';
+  
+  console.log(checkBrackets(someFn));
+  </pre>
+  `,
+  Conclusion: `
+  <div style="margin:20px;">
+  <h1>Висновок</h1>
+    <p>У розробці веб-додатків іноді виникає необхідність працювати з масивами у JavaScript-сценаріях. Масиви є потужним інструментом для зберігання та обробки даних в програмах.</p>
+    <p>Використання масивів у JavaScript дозволяє ефективно керувати великою кількістю даних, проводити їх сортування, фільтрацію, трансформацію та інші операції.</p>
+    <p>Реалізація програм за допомогою мови JavaScript включає в себе використання масивів для зберігання та обробки даних. Наприклад, створення списку завдань у додатку для управління проектами, відображення списку користувачів у соціальній мережі або фільтрація товарів у інтернет-магазині.</p>
+    <p>Застосування функціонального програмування у JavaScript також відображається у роботі з масивами. Функції вищих порядків, такі як <code>map()</code>, <code>filter()</code>, <code>reduce()</code> дозволяють лаконічно та ефективно опрацьовувати масиви даних.</p>
+    <ul>
+        <li>Створення списку завдань у додатку для управління проектами.</li>
+        <li>Відображення списку користувачів у соціальній мережі.</li>
+        <li>Фільтрація товарів у інтернет-магазині.</li>
+    </ul>
+    <p>Таким чином, вміння працювати з масивами у JavaScript є важливою навичкою для розробників веб-додатків, яка допомагає створювати потужні та функціональні програми.</p></div>
+  `
 }
 
 let currentelement;
@@ -1355,6 +1560,47 @@ function displayinfo(button) {
       }
       else if (classelementName == "aside-button5"){
         containing.innerHTML = lab5.Conclusion;
+      }
+      break;
+
+
+    case "aside-button-lab6":
+      if (classelementName == "aside-button1") {
+        containing.innerHTML = lab6.Theme;
+      }
+
+      else if (classelementName == "aside-button2") {
+        containing.innerHTML = lab6.TaskOne;
+        insertScript("scripts/lab5.1task1.js");
+      }
+
+      else if (classelementName == "aside-button3") {
+        containing.innerHTML = lab6.TaskThree;
+        insertScript("scripts/lab5.1task3.js");
+      }
+      
+      else if (classelementName == "aside-button4"){
+        containing.innerHTML = lab6.TaskFive;
+        insertScript("scripts/lab5.1Task5.js")
+      }
+
+      else if (classelementName == "aside-button5"){
+        containing.innerHTML = lab6.TaskSeven;
+        insertScript("scripts/lab5.1Task7.js")
+      }
+
+      else if (classelementName == "aside-button6"){
+        containing.innerHTML = lab6.TaskNine;
+        insertScript("scripts/lab5.1Task9.js")
+      }
+
+      else if (classelementName == "aside-button7"){
+        containing.innerHTML = lab6.TaskTen;
+        insertScript("scripts/lab5.1Task10.js")
+      }
+
+      else if (classelementName == "aside-button8"){
+        containing.innerHTML = lab6.Conclusion;
       }
     }
 }
