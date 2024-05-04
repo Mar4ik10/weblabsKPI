@@ -1,4 +1,7 @@
 function checkBrackets(str) {
+    if (str.length == 0) {
+        return null
+    }
   const stack = [];
   const openingBrackets = ['(', '{', '['];
   const closingBrackets = [')', '}', ']'];
@@ -22,6 +25,6 @@ function checkBrackets(str) {
   return stack.length === 0;
 }
 
-const sometext = ``;
+const sometext = `[`;
 
-console.log(checkBrackets(someFn));
+console.log(checkBrackets(sometext));
