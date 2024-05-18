@@ -1418,8 +1418,125 @@ console.log(sortedMedicines);
         <li>Відображення списку користувачів у соціальній мережі.</li>
         <li>Фільтрація товарів у інтернет-магазині.</li>
     </ul>
-    <p>Таким чином, вміння працювати з масивами у JavaScript є важливою навичкою для розробників веб-додатків, яка допомагає створювати потужні та функціональні програми.</p></div>
+    <p>Таким чином, вміння працювати з масивами у JavaScript є важливою навичкою для розробників веб-додатків, яка допомагає створювати потужні та функціональні програми.</p>
   `
+}
+
+let lab7 = {
+  Theme: `<style>
+  .center {
+    text-align: center;
+  }
+  </style>
+  <div class="center">
+    <h1>Тема</h1>
+    <p>
+    <style>
+    .center {
+      text-align: center;
+    }
+    </style>
+    <div class="center">
+      <h1>Тема</h1>
+      <p>
+        ФУНКЦІОНАЛЬНЕ ЗАСТОСУВАННЯ JAVASCRIPT У HTML-ДОКУМЕНТІ. ВИКОРИСТАННЯ
+        МАСИВІВ У JS-СЦЕНАРІЯХ. РЕАЛІЗАЦІЯ ПРОГРАМ ЗАСОВАМИ МОВИ JAVASCRIPT
+      </p>
+      <h1 style="margin-top: 15px">Мета</h1>
+      <p>
+      придбати практичні навички роботи з об'єктами. Методи об'єкта.. Callback. Стрілочні функції. Стрілочні функції як колбеки.
+      .  Реалізація програм засовами мови JAVASCRIPT
+      
+      </p>
+      <h1 style="margin-top: 20px">Посилання на репозиторій:</h1>
+      <p>https://github.com/Mar4ik10/WebCoworking</p>
+    </div>
+    </p>
+    <h1 style="margin-top: 15px">Мета</h1>
+    <p>
+      придбати практичні навички роботи з масивами у js-сценаріях.
+      Реалізація програм засовами мови JAVASCRIPT
+    </p>
+    <h1 style="margin-top: 20px">Посилання на репозиторій:</h1>
+    <p>https://github.com/Mar4ik10/WebCoworking</p>
+  </div>`,
+  TaskOne: `<div style="background-color: lightgreen;">
+  <h1 style="text-align: center; margin-bottom: 50px;">ЗАВДАННЯ 1</h1>
+  <button id="showbutton">SHOW ME</button>
+  <input type="text" id="inputField">
+</div>`,
+  TaskThree: `<div style="background-color: lightgreen;">
+  <h1 style="margin-bottom: 50px; text-align: center;">ЗАВДАННЯ 3</h1>
+<input type="text" id="inputField" placeholder="Введіть текст">
+<button id="hideShowButton" onclick="hideShowText()">Приховати</button>
+</div>`,
+  TaskFive: `<style>
+  #place {
+    width: 200px;
+    height: 100px;
+    background-color: lightgreen;
+    margin-top: 20px;
+}
+</style>
+<div style="background-color: green;">
+  <h1 class="taskTitle">ЗАВДАННЯ 5</h1>
+  <div id="place"></div>`,
+  TaskSeven: `<div style="background-color: lightgreen; padding: 40px;">
+  <ul id="categories">
+    <li class="item">
+      <h2>Animals</h2>
+      <ul>
+        <li>Cat</li>
+        <li>Hamster</li>
+        <li>Horse</li>
+        <li>Parrot</li>
+      </ul>
+    </li>
+    <li class="item">
+      <h2>Products</h2>
+      <ul>
+        <li>Bread</li>
+        <li>Prasley</li>
+        <li>Cheese</li>
+      </ul>
+    </li>
+    <li class="item">
+      <h2>Technologies</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Node.js</li>
+      </ul>
+    </li>
+  </ul>
+</div>`,
+  TaskNine: `<div class="widget">
+  <p>Background color: <span class="color">-</span></p>
+  <button type="button" class="change-color">Change color</button>
+</div>`,
+  TaskTen: `<div id="controls">
+  <input type="number" min="1" max="100" step="1" />
+  <button type="button" data-create>Create</button>
+  <button type="button" data-destroy>Destroy</button>
+</div>
+
+<div id="boxes"></div>`,
+  Conclusion: `<div style="padding: 50px;">
+
+  <h2>Висновок</h2>
+  <p>Під час виконання завдання було звернуто увагу на такі ключові поняття:</p>
+  <ul>
+      <li>КЛАСИ: створення та використання класів для організації коду та роботи з об'єктами.</li>
+      <li>ОБ'ЄКТНА МОДЕЛЬ ДОКУМЕНТА (DOM): робота з елементами HTML-сторінки, їх структура та взаємодія з JavaScript.</li>
+      <li>ПОДІЇ: використання об'єкта події для обробки взаємодії користувача з веб-сторінкою.</li>
+      <li>ДЕЛЕГУВАННЯ ПОДІЙ: спосіб обробки подій на батьківському елементі, що дозволяє ефективно використовувати пам'ять та працездатність скрипту.</li>
+      <li>THROTTLE: метод оптимізації функцій, який дозволяє обмежити частоту виклику функцій.</li>
+      <li>МОДУЛЬНІСТЬ КОДУ: розподіл коду на невеликі модулі для збереження його логічної структури та полегшення управління.</li>
+  </ul>
+  <p>Практична частина завдання дозволила закріпити отримані знання та вміння через реалізацію програм засобами мови JavaScript, використовуючи класи, об'єктну модель документа, події, об'єкти подій, колбеки та стрілочні функції як колбеки.</p>
+</div>`,
 }
 
 let currentelement;
@@ -1601,6 +1718,46 @@ function displayinfo(button) {
 
       else if (classelementName == "aside-button8"){
         containing.innerHTML = lab6.Conclusion;
+      }
+
+
+    case "aside-button-lab7":
+      if (classelementName == "aside-button1") {
+        containing.innerHTML = lab7.Theme;
+      }
+
+      else if (classelementName == "aside-button2") {
+        containing.innerHTML = lab7.TaskOne;
+        insertScript("scripts/lab6task1.js");
+      }
+
+      else if (classelementName == "aside-button3") {
+        containing.innerHTML = lab7.TaskThree;
+        insertScript("scripts/lab6task3.js");
+      }
+      
+      else if (classelementName == "aside-button4"){
+        containing.innerHTML = lab7.TaskFive;
+        insertScript("scripts/lab6Task5.js")
+      }
+
+      else if (classelementName == "aside-button5"){
+        containing.innerHTML = lab7.TaskSeven;
+        insertScript("scripts/lab6Task7.js")
+      }
+
+      else if (classelementName == "aside-button6"){
+        containing.innerHTML = lab7.TaskNine;
+        insertScript("scripts/lab6Task9.js")
+      }
+
+      else if (classelementName == "aside-button7"){
+        containing.innerHTML = lab7.TaskTen;
+        insertScript("scripts/lab6Task10.js")
+      }
+
+      else if (classelementName == "aside-button8"){
+        containing.innerHTML = lab7.Conclusion;
       }
     }
 }
