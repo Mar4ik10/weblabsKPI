@@ -1448,16 +1448,7 @@ let lab7 = {
       </p>
       <h1 style="margin-top: 20px">Посилання на репозиторій:</h1>
       <p>https://github.com/Mar4ik10/WebCoworking</p>
-    </div>
-    </p>
-    <h1 style="margin-top: 15px">Мета</h1>
-    <p>
-      придбати практичні навички роботи з масивами у js-сценаріях.
-      Реалізація програм засовами мови JAVASCRIPT
-    </p>
-    <h1 style="margin-top: 20px">Посилання на репозиторій:</h1>
-    <p>https://github.com/Mar4ik10/WebCoworking</p>
-  </div>`,
+    </div>`,
   TaskOne: `<div style="background-color: lightgreen;">
   <h1 style="text-align: center; margin-bottom: 50px;">ЗАВДАННЯ 1</h1>
   <button id="showbutton">SHOW ME</button>
@@ -1545,8 +1536,6 @@ let lab8 = {
   }
   </style>
   <div class="center">
-    <h1>Тема</h1>
-    <p>
     <style>
     .center {
       text-align: center;
@@ -1555,39 +1544,313 @@ let lab8 = {
     <div class="center">
       <h1>Тема</h1>
       <p>
-        ФУНКЦІОНАЛЬНЕ ЗАСТОСУВАННЯ JAVASCRIPT У HTML-ДОКУМЕНТІ. ВИКОРИСТАННЯ
-        МАСИВІВ У JS-СЦЕНАРІЯХ. РЕАЛІЗАЦІЯ ПРОГРАМ ЗАСОВАМИ МОВИ JAVASCRIPT
+      WEB-СХОВИЩЕ. WEB STORAGE API. МОДУЛЬНОСТЬ  КОДУ. СТВОРЕННЯ МОДАЛЬНОГО ВІКНА. ДЕЛЕГУВАННЯ ПОДІЙ.
       </p>
       <h1 style="margin-top: 15px">Мета</h1>
       <p>
-      придбати практичні навички роботи з об'єктами. Методи об'єкта.. Callback. Стрілочні функції. Стрілочні функції як колбеки.
-      .  Реалізація програм засовами мови JAVASCRIPT
-      
+      придбати практичні навички роботи створення модального вікна; повторити процес створення макету, зокрема створення макету галереї довільних зображень; закріпити навички роботи з делегуванням подій.
       </p>
       <h1 style="margin-top: 20px">Посилання на репозиторій:</h1>
       <p>https://github.com/Mar4ik10/WebCoworking</p>
+      <p>https://github.com/Mar4ik10/weblab7-task1</p>
+      <p>https://github.com/Mar4ik10/weblab7-task2</p>
     </div>
-    </p>
-    <h1 style="margin-top: 15px">Мета</h1>
-    <p>
-      придбати практичні навички роботи з масивами у js-сценаріях.
-      Реалізація програм засовами мови JAVASCRIPT
-    </p>
-    <h1 style="margin-top: 20px">Посилання на репозиторій:</h1>
-    <p>https://github.com/Mar4ik10/WebCoworking</p>
-  </div>`,
-  TaskOne: `<div style="background-color: lightgreen;">
-  <h1 style="text-align: center; margin-bottom: 50px;">ЗАВДАННЯ 1</h1>
-  <button id="showbutton">SHOW ME</button>
-  <input type="text" id="inputField">
-</div>`,
-  TaskTwo: `<div style="background-color: lightgreen;">
-  <h1 style="margin-bottom: 50px; text-align: center;">ЗАВДАННЯ 3</h1>
-<input type="text" id="inputField" placeholder="Введіть текст">
-<button id="hideShowButton" onclick="hideShowText()">Приховати</button>
-</div>`,
+    </p>`,
+  TaskOne: `<h1>Структура проекту</h1>
+  <img src="images/weblab7task1.png" alt="Структура проекту">
+  
+  <h2>HTML</h2>
+  <pre>
+  &lt;!DOCTYPE html&gt;
+  &lt;html lang="en"&gt;
+    &lt;head&gt;
+      &lt;meta charset="UTF-8" /&gt;
+      &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+      &lt;title&gt;Gallery&lt;/title&gt;
+      &lt;!-- Підключення бібліотеки basicLightbox через CDN --&gt;
+      &lt;link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css"
+      /&gt;
+      &lt;link rel="stylesheet" href="css/styles.css" /&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      &lt;ul class="gallery"&gt;&lt;/ul&gt;
+  
+      &lt;!-- Підключення скрипту basicLightbox через CDN --&gt;
+      &lt;script src="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.js"&gt;&lt;/script&gt;
+      &lt;script src="js/gallery.js"&gt;&lt;/script&gt;
+    &lt;/body&gt;
+  &lt;/html&gt;
+  </pre>
+  
+  <h2>CSS</h2>
+  <pre>
+  body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+  }
+  
+  .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+      list-style: none;
+      padding: 0;
+      margin: 20px;
+  }
+  
+  .gallery-item {
+      width: 100%;
+      height: auto;
+  }
+  
+  .gallery-link {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+  }
+  
+  .gallery-image {
+      display: block;
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      transition: transform 0.3s;
+  }
+  
+  .gallery-image:hover {
+      transform: scale(1.1);
+  }
+  </pre>
+  
+  <h2>JavaScript</h2>
+  <pre>
+  const images = [
+      {
+          preview: 'images/image1.png',
+          original: 'images/image1.png',
+          description: 'Гори',
+      },
+      {
+          preview: 'images/image2.png',
+          original: 'images/image2.png',
+          description: 'Листя',
+      },
+      {
+          preview: 'images/image3.png',
+          original: 'images/image3.png',
+          description: 'Людське око',
+      },
+      {
+          preview: 'images/image4.png',
+          original: 'images/image4.png',
+          description: 'Панда',
+      },
+      {
+          preview: 'images/image5.png',
+          original: 'images/image5.png',
+          description: 'Хамелеон',
+      },
+      {
+          preview: 'images/image6.png',
+          original: 'images/image6.png',
+          description: 'Дерево',
+      }
+  ];
+  
+  // Функція для створення розмітки галереї
+  const createGalleryMarkup = (images) => {
+      return images.map(({ preview, original, description }) => {
+          return '
+              &lt;li class="gallery-item"&gt;
+                  &lt;a class="gallery-link" href="{original}"&gt;
+                      &lt;img class="gallery-image" src="{preview}" data-source="{original}" alt="{description}"&gt;
+                  &lt;/a&gt;
+              &lt;/li&gt;
+          ';
+      }).join('');
+  };
+  
+  // Додавання розмітки галереї до контейнера
+  const galleryContainer = document.querySelector('.gallery');
+  const galleryMarkup = createGalleryMarkup(images);
+  console.log(galleryMarkup);
+  galleryContainer.innerHTML = galleryMarkup;
+  
+  // Додавання прослуховування подій на контейнер галереї
+  galleryContainer.addEventListener('click', (event) => {
+      event.preventDefault();
+      const isGalleryImage = event.target.classList.contains('gallery-image');
+      if (!isGalleryImage) return;
+  });
+  </pre>`,
+  TaskTwo: `<h1>Структура проекту</h1>
+  <img src="images/weblab7task2.png" alt="Структура проекту">
+  
+  <h2>HTML</h2>
+  <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+    &lt;title&gt;Feedback Form&lt;/title&gt;
+    &lt;link rel="stylesheet" href="css/2-form.css" /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;form class="feedback-form" autocomplete="off"&gt;
+      &lt;label&gt;
+        Email
+        &lt;input type="email" name="email" autofocus /&gt;
+      &lt;/label&gt;
+      &lt;label&gt;
+        Message
+        &lt;textarea name="message" rows="8"&gt;&lt;/textarea&gt;
+      &lt;/label&gt;
+      &lt;button type="submit"&gt;Submit&lt;/button&gt;
+    &lt;/form&gt;
+    &lt;script src="js/2-form.js"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<br>
+<h2>CSS</h2>
+<pre>
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
 
-  Conclusion: ``,
+.feedback-form {
+  width: 400px;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.feedback-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.feedback-form input[type="email"],
+.feedback-form textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.feedback-form textarea {
+  height: 100px;
+}
+
+.feedback-form button[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.feedback-form button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.feedback-form button[type="submit"]:focus {
+  outline: none;
+}
+
+.feedback-form .error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+</pre>
+
+<h2>JS</h2>
+<pre>const form = document.querySelector('.feedback-form');
+
+// Оголошення об'єкту formData з початковими порожніми значеннями
+let formData = {
+    email: "",
+    message: ""
+};
+
+// Перевірка, чи є дані у локальному сховищі і заповнення форми відповідно
+const savedFormData = localStorage.getItem('feedback-form-state');
+if (savedFormData) {
+    formData = JSON.parse(savedFormData);
+    form.email.value = formData.email;
+    form.message.value = formData.message;
+}
+
+// Функція для оновлення даних у локальному сховищі
+const updateLocalStorage = () => {
+    localStorage.setItem('feedback-form-state', JSON.stringify(formData));
+};
+
+// Прослуховування події input та оновлення даних у formData і локальному сховищі
+form.addEventListener('input', (event) => {
+    const { name, value } = event.target;
+    formData[name] = value.trim();
+    updateLocalStorage();
+});
+
+// Прослуховування події submit
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    // Перевірка наявності значень в обох полях форми
+    if (!formData.email || !formData.message) {
+        alert('Fill please all fields');
+        return;
+    }
+
+    // Логування об'єкту formData та очищення локального сховища та об'єкту formData
+    console.log(formData);
+    localStorage.removeItem('feedback-form-state');
+    formData = { email: "", message: "" };
+
+    // Очистка полів форми
+    form.reset();
+});
+</pre>`,
+
+  Conclusion: `
+  <div style="margin: 20px;">
+  <h2>Висновок</h2>
+  <ol>
+    <li>
+      <p>У лабораторній роботі ми успішно опанували ряд важливих концепцій веб-розробки.</p>
+    </li>
+    <li>
+      <p>Використання веб-сховища та Web Storage API дозволило зберігати дані форми вводу між сеансами користувача.</p>
+    </li>
+    <li>
+      <p>Розділення коду на окремі файли для HTML, CSS та JavaScript підвищило читабельність та підтримку.</p>
+    </li>
+    <li>
+      <p>Модальне вікно, яке ми створили, є корисним інструментом для відображення додаткової інформації або взаємодії з користувачем.</p>
+    </li>
+    <li>
+      <p>Використання делегування подій дозволило нам ефективно керувати подіями в динамічно доданих елементах.</p>
+    </li>
+    <li>
+      <p>Усі ці концепції важливі для сучасної веб-розробки та допомагають побудувати функціональні та ефективні веб-додатки.</p>
+    </li>
+  </ol>
+  </div>`,
 }
 
 let currentelement;
@@ -1782,7 +2045,6 @@ function displayinfo(button) {
       else if (classelementName == "aside-button2") {
         containing.innerHTML = lab7.TaskOne;
         insertScript("scripts/lab6task1.js");
-        console.log("HELLO")
       }
 
       else if (classelementName == "aside-button3") {
