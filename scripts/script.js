@@ -1429,8 +1429,6 @@ let lab7 = {
   }
   </style>
   <div class="center">
-    <h1>Тема</h1>
-    <p>
     <style>
     .center {
       text-align: center;
@@ -1537,6 +1535,59 @@ let lab7 = {
   </ul>
   <p>Практична частина завдання дозволила закріпити отримані знання та вміння через реалізацію програм засобами мови JavaScript, використовуючи класи, об'єктну модель документа, події, об'єкти подій, колбеки та стрілочні функції як колбеки.</p>
 </div>`,
+}
+
+
+let lab8 = {
+  Theme: `<style>
+  .center {
+    text-align: center;
+  }
+  </style>
+  <div class="center">
+    <h1>Тема</h1>
+    <p>
+    <style>
+    .center {
+      text-align: center;
+    }
+    </style>
+    <div class="center">
+      <h1>Тема</h1>
+      <p>
+        ФУНКЦІОНАЛЬНЕ ЗАСТОСУВАННЯ JAVASCRIPT У HTML-ДОКУМЕНТІ. ВИКОРИСТАННЯ
+        МАСИВІВ У JS-СЦЕНАРІЯХ. РЕАЛІЗАЦІЯ ПРОГРАМ ЗАСОВАМИ МОВИ JAVASCRIPT
+      </p>
+      <h1 style="margin-top: 15px">Мета</h1>
+      <p>
+      придбати практичні навички роботи з об'єктами. Методи об'єкта.. Callback. Стрілочні функції. Стрілочні функції як колбеки.
+      .  Реалізація програм засовами мови JAVASCRIPT
+      
+      </p>
+      <h1 style="margin-top: 20px">Посилання на репозиторій:</h1>
+      <p>https://github.com/Mar4ik10/WebCoworking</p>
+    </div>
+    </p>
+    <h1 style="margin-top: 15px">Мета</h1>
+    <p>
+      придбати практичні навички роботи з масивами у js-сценаріях.
+      Реалізація програм засовами мови JAVASCRIPT
+    </p>
+    <h1 style="margin-top: 20px">Посилання на репозиторій:</h1>
+    <p>https://github.com/Mar4ik10/WebCoworking</p>
+  </div>`,
+  TaskOne: `<div style="background-color: lightgreen;">
+  <h1 style="text-align: center; margin-bottom: 50px;">ЗАВДАННЯ 1</h1>
+  <button id="showbutton">SHOW ME</button>
+  <input type="text" id="inputField">
+</div>`,
+  TaskTwo: `<div style="background-color: lightgreen;">
+  <h1 style="margin-bottom: 50px; text-align: center;">ЗАВДАННЯ 3</h1>
+<input type="text" id="inputField" placeholder="Введіть текст">
+<button id="hideShowButton" onclick="hideShowText()">Приховати</button>
+</div>`,
+
+  Conclusion: ``,
 }
 
 let currentelement;
@@ -1761,6 +1812,25 @@ function displayinfo(button) {
 
       else if (classelementName == "aside-button8"){
         containing.innerHTML = lab7.Conclusion;
+      }
+
+      break;
+
+    case "aside-button-lab8":
+      if (classelementName == "aside-button1") {
+        containing.innerHTML = lab8.Theme;
+      }
+
+      else if (classelementName == "aside-button2") {
+        containing.innerHTML = lab8.TaskOne;
+      }
+
+      else if (classelementName == "aside-button3") {
+        containing.innerHTML = lab8.TaskTwo;
+      }
+
+      else if (classelementName == "aside-button4"){
+        containing.innerHTML = lab8.Conclusion;
       }
 
       break;
