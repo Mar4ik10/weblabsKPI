@@ -1571,6 +1571,7 @@ function displayinfo(button) {
   containing.innerHTML = "";
 
   switch (parentelement) {
+
     case "aside-button-lab1":
       if (classelementName == "aside-button1") {
         containing.innerHTML = lab1.Opys;
@@ -1684,16 +1685,17 @@ function displayinfo(button) {
     case "aside-button-lab6":
       if (classelementName == "aside-button1") {
         containing.innerHTML = lab6.Theme;
+        console.log("HELLO");
       }
 
       else if (classelementName == "aside-button2") {
         containing.innerHTML = lab6.TaskOne;
-        insertScript("scripts/lab5.1task1.js");
+        insertScript("scripts/lab5.1Task1.js");
       }
 
       else if (classelementName == "aside-button3") {
         containing.innerHTML = lab6.TaskThree;
-        insertScript("scripts/lab5.1task3.js");
+        insertScript("scripts/lab5.1Task3.js");
       }
       
       else if (classelementName == "aside-button4"){
@@ -1719,7 +1721,7 @@ function displayinfo(button) {
       else if (classelementName == "aside-button8"){
         containing.innerHTML = lab6.Conclusion;
       }
-
+      break;
 
     case "aside-button-lab7":
       if (classelementName == "aside-button1") {
@@ -1729,6 +1731,7 @@ function displayinfo(button) {
       else if (classelementName == "aside-button2") {
         containing.innerHTML = lab7.TaskOne;
         insertScript("scripts/lab6task1.js");
+        console.log("HELLO")
       }
 
       else if (classelementName == "aside-button3") {
@@ -1759,5 +1762,7 @@ function displayinfo(button) {
       else if (classelementName == "aside-button8"){
         containing.innerHTML = lab7.Conclusion;
       }
+
+      break;
     }
 }
