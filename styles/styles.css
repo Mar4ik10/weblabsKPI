@@ -46,7 +46,8 @@ aside {
 #aside-button-lab6, 
 #aside-button-lab7,
 #aside-button-lab8,
-#aside-button-lab8 {
+#aside-button-lab9,
+#aside-button-lab10 {
     display: flex;
     flex-direction: column;
 
@@ -75,4 +76,8 @@ aside .aside-button {
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.images-labs {
+    width: 700px;
 }

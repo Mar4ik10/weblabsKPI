@@ -1853,6 +1853,78 @@ form.addEventListener('submit', (event) => {
   </div>`,
 }
 
+let lab9 = {
+  Theme: `<style>
+  .center {
+    text-align: center;
+  }
+  </style>
+  <div class="center">
+    <style>
+    .center {
+      text-align: center;
+    }
+    </style>
+    <div class="center">
+      <h1>Тема</h1>
+      <p>
+      RACT BASICS
+      </p>
+      <h1 style="margin-top: 20px">Посилання на репозиторій:</h1>
+      <p>https://github.com/Mar4ik10/WebCoworking</p>
+      <h1 style="margin-top: 20px">Посилання на сертифікат:</h1>
+      <p>https://coursera.org/share/3cc085f54ec8827cb15260fd09c129d9</p>
+    </div>
+    </p>`,
+  Certificate: `<img class="images-labs" src="images/lab8/certificate.png" alt="" />`,
+  Mod1Test1: `<img
+  class="images-labs"
+  src="images/lab8/module1/test1/img1.png"
+  alt="Hi"
+/>`,
+Mod1Test2: `<img src="images/lab8/module1/test2/img1.png" alt="" />`,
+Mod1Test3: `<img src="images/lab8/module1/test3/img1.png" alt="" />
+<img src="images/lab8/module1/test3/img2.png" alt="" />`,
+Mod1Test4: `<img src="images/lab8/module1/test4/img1.png" alt="" />`,
+Mod1Test5: `<img src="images/lab8/module1/test5/img1.png" alt="" />`,
+Mod1Test6: `<img src="images/lab8/module1/test6/img1.png" alt="" />
+<img src="images/lab8/module1/test6/img2.png" alt="" />
+<img src="images/lab8/module1/test6/img3.png" alt="" />
+<img src="images/lab8/module1/test6/img4.png" alt="" />`,
+
+
+Mod2Test1: `<img src="images/lab8/module2/test1/img1.png" alt="" />
+<img src="images/lab8/module2/test1/img2.png" alt="" />`,
+Mod2Test2: `<img src="images/lab8/module2/test2/img1.png" alt="" />`,
+Mod2Test3: `<img src="images/lab8/module2/test3/img1.png" alt="" />
+<img src="images/lab8/module2/test3/img2.png" alt="" />
+<img src="images/lab8/module2/test3/img3.png" alt="" />`,
+Mod2Test4: `<img src="images/lab8/module2/test4/img1.png" alt="" />
+<img src="images/lab8/module2/test4/img2.png" alt="" />`,
+Mod2Test5: `<img src="images/lab8/module2/test5/img1.png" alt="" />
+<img src="images/lab8/module2/test5/img2.png" alt="" />`,
+Mod2Test6: `<img src="images/lab8/module2/test6/img1.png" alt="" />
+<img src="images/lab8/module2/test6/img2.png" alt="" />
+<img src="images/lab8/module2/test6/img3.png" alt="" />`,
+
+
+
+Mod3Test1: `<img src="images/lab8/module3/test1/img1.png" alt="" />`,
+Mod3Test2: `<img src="images/lab8/module3/test2/img1.png" alt="" />
+<img src="images/lab8/module3/test2/img2.png" alt="" />`,
+Mod3Test3: `<img src="images/lab8/module3/test3/img1.png" alt="" />
+<img src="images/lab8/module3/test3/img2.png" alt="" />
+<img src="images/lab8/module3/test3/img3.png" alt="" />`,
+Mod3Test4: `<img src="images/lab8/module3/test4/img1.png" alt="" />
+<img src="images/lab8/module3/test4/img2.png" alt="" />`,
+Mod3Test5: `<img src="images/lab8/module3/test5/img1.png" alt="" />`,
+Mod3Test6: `<img src="images/lab8/module3/test6/img1.png" alt="" />
+<img src="images/lab8/module3/test6/img2.png" alt="" />
+<img src="images/lab8/module3/test6/img3.png" alt="" />
+`,
+}
+
+
 let currentelement;
 let lastelement;
 
@@ -2094,7 +2166,90 @@ function displayinfo(button) {
       else if (classelementName == "aside-button4"){
         containing.innerHTML = lab8.Conclusion;
       }
+      break;
 
+    case "aside-button-lab9":
+      if (classelementName == "aside-button1") {
+        containing.innerHTML = lab9.Theme;
+      }
+
+      else if (classelementName == "aside-button2") {
+        containing.innerHTML = lab9.Certificate;
+      }
+
+      else if (classelementName == "aside-button3") {
+      }
+
+      else if (classelementName == "aside-button4"){
+        containing.innerHTML = lab9.Mod1Test1;
+      }
+      else if (classelementName == "aside-button5") {
+        containing.innerHTML = lab9.Mod1Test2;
+      }
+
+      else if (classelementName == "aside-button6") {
+        containing.innerHTML = lab9.Mod1Test3;
+      }
+
+      else if (classelementName == "aside-button7"){
+        containing.innerHTML = lab9.Mod1Test4;
+      }
+      else if (classelementName == "aside-button8") {
+        containing.innerHTML = lab9.Mod1Test5;
+      }
+
+      else if (classelementName == "aside-button9") {
+        containing.innerHTML = lab9.Mod1Test6;
+      }
+
+      else if (classelementName == "aside-button10"){
+      }
+      else if (classelementName == "aside-button11") {
+        containing.innerHTML = lab9.Mod2Test1;
+      }
+
+      else if (classelementName == "aside-button12") {
+        containing.innerHTML = lab9.Mod2Test2;
+      }
+
+      else if (classelementName == "aside-button13"){
+        containing.innerHTML = lab9.Mod2Test3;
+      }
+      else if (classelementName == "aside-button14"){
+        containing.innerHTML = lab9.Mod2Test4;
+      }
+      else if (classelementName == "aside-button15") {
+        containing.innerHTML = lab9.Mod2Test5;
+      }
+
+      else if (classelementName == "aside-button16") {
+        containing.innerHTML = lab9.Mod2Test6;
+      }
+
+      else if (classelementName == "aside-button17"){
+      }
+
+      else if (classelementName == "aside-button18") {
+        containing.innerHTML = lab9.Mod3Test1;
+      }
+
+      else if (classelementName == "aside-button19") {
+        containing.innerHTML = lab9.Mod3Test2;
+      }
+
+      else if (classelementName == "aside-button20"){
+        containing.innerHTML = lab9.Mod3Test3;
+      }
+      else if (classelementName == "aside-button21"){
+        containing.innerHTML = lab9.Mod3Test4;
+      }
+      else if (classelementName == "aside-button22") {
+        containing.innerHTML = lab9.Mod3Test5;
+      }
+
+      else if (classelementName == "aside-button23") {
+        containing.innerHTML = lab9.Mod3Test6;
+      }
       break;
     }
 }
