@@ -1924,6 +1924,55 @@ Mod3Test6: `<img src="images/lab8/module3/test6/img1.png" alt="" />
 `,
 }
 
+let lab10 = {
+  Theme: `<style>
+  .center {
+    text-align: center;
+  }
+  </style>
+  <div class="center">
+    <style>
+    .center {
+      text-align: center;
+    }
+    </style>
+    <div class="center">
+      <h1>Тема</h1>
+      <p>
+      Building RESTful APIs with Node.js and Express
+      </p>
+      <h1 style="margin-top: 20px">Посилання на репозиторій:</h1>
+      <p>https://github.com/Mar4ik10/WebCoworking</p>
+      <p>https://github.com/Mar4ik10/weblab-nodejs-express</p>
+      <h1 style="margin-top: 20px">Посилання на сертифікат:</h1>
+      <p>https://coursera.org/share/c269554e63def6006a0b2e5624819d0f</p>
+    </div>
+    </p>`,
+  Certificate: `<img class="images-labs" src="images/lab9/certificate.png" alt="" />`,
+  Mod1Test1: `<img class="images-labs" src="images/lab9/module1/test1/img1.png" alt="" />`,
+  Mod1Test2: `<img class="images-labs" src="images/lab9/module1/test2/img1.png" alt="" />
+  <img class="images-labs" src="images/lab9/module2/test2/img2.png" alt="" />
+  <img class="images-labs" src="images/lab9/module2/test2/img3.png" alt="" />
+  <img class="images-labs" src="images/lab9/module2/test2/img4.png" alt="" />
+  <img class="images-labs" src="images/lab9/module2/test2/img5.png" alt="" />`,
+  Mod2Test1: `<img class="images-labs" src="images/lab9/module2/test1/img1.png" alt="" />
+  <img class="images-labs" src="images/lab9/module2/test1/img2.png" alt="" />`,
+  Mod2Test2: `<img class="images-labs" src="images/lab9/module2/test2/img1.png" alt="" />
+  <img class="images-labs" src="images/lab9/module2/test2/img2.png" alt="" />`,
+  Mod2Test3: `<img class="images-labs" src="images/lab9/module2/test3/img1.png" alt="" />
+  <img class="images-labs" src="images/lab9/module2/test3/img2.png" alt="" />
+  <img class="images-labs" src="images/lab9/module2/test3/img3.png" alt="" />
+  <img class="images-labs" src="images/lab9/module2/test3/img4.png" alt="" />
+  <img class="images-labs" src="images/lab9/module2/test3/img5.png" alt="" />
+  <img class="images-labs" src="images/lab9/module2/test3/img6.png" alt="" />
+  <img class="images-labs" src="images/lab9/module2/test3/img7.png" alt="" />`,
+  Mod3Test1: `<img class="images-labs" src="images/lab9/module3/test1/img1.png" alt="" />
+  <img class="images-labs" src="images/lab9/module3/test2/img2.png" alt="" />`,
+  Mod3Test2: `<img class="images-labs" src="images/lab9/module3/test2/img1.png" alt="" />
+  <img class="images-labs" src="images/lab9/module3/test2/img2.png" alt="" />`,
+  Mod3Test3: `<img class="images-labs" src="images/lab9/module3/test3/img1.png" alt="" />
+  <img class="images-labs" src="images/lab9/module3/test3/img2.png" alt="" />`,
+}
 
 let currentelement;
 let lastelement;
@@ -2249,6 +2298,55 @@ function displayinfo(button) {
 
       else if (classelementName == "aside-button23") {
         containing.innerHTML = lab9.Mod3Test6;
+      }
+      break;
+
+      case "aside-button-lab10":
+      if (classelementName == "aside-button1") {
+        containing.innerHTML = lab10.Theme;
+      }
+
+      else if (classelementName == "aside-button2") {
+        containing.innerHTML = lab10.Certificate;
+      }
+
+      else if (classelementName == "aside-button3") {
+      }
+
+      else if (classelementName == "aside-button4"){
+        containing.innerHTML = lab10.Mod1Test1;
+      }
+      else if (classelementName == "aside-button5") {
+        containing.innerHTML = lab10.Mod1Test2;
+      }
+
+      else if (classelementName == "aside-button7"){
+      }
+      else if (classelementName == "aside-button8") {
+        containing.innerHTML = lab10.Mod2Test1;
+      }
+
+      else if (classelementName == "aside-button9") {
+        containing.innerHTML = lab10.Mod2Test2;
+      }
+
+      else if (classelementName == "aside-button10"){
+        containing.innerHTML = lab10.Mod2Test3;
+      }
+
+      else if (classelementName == "aside-button11"){
+      }
+
+      else if (classelementName == "aside-button12") {
+        containing.innerHTML = lab10.Mod3Test1;
+      }
+
+      else if (classelementName == "aside-button13") {
+        containing.innerHTML = lab10.Mod3Test2;
+      }
+
+      else if (classelementName == "aside-button14"){
+        containing.innerHTML = lab10.Mod3Test3;
       }
       break;
     }
