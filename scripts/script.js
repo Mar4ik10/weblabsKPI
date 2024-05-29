@@ -1876,7 +1876,7 @@ let lab9 = {
       <p>https://coursera.org/share/3cc085f54ec8827cb15260fd09c129d9</p>
     </div>
     </p>`,
-  Certificate: `<img class="images-labs" src="images/lab8/certificate.png" alt="" />`,
+  Certificate: `<img class="images-labs" src="images/lab8/certificatemarks.png" alt="" />`,
   Mod1Test1: `<img
   class="images-labs"
   src="images/lab8/module1/test1/img1.png"
@@ -1948,7 +1948,7 @@ let lab10 = {
       <p>https://coursera.org/share/c269554e63def6006a0b2e5624819d0f</p>
     </div>
     </p>`,
-  Certificate: `<img class="images-labs" src="images/lab9/certificate.png" alt="" />`,
+  Certificate: `<img class="images-labs" src="images/lab9/certificatemarks.png" alt="" />`,
   Mod1Test1: `<img class="images-labs" src="images/lab9/module1/test1/img1.png" alt="" />`,
   Mod1Test2: `<img class="images-labs" src="images/lab9/module1/test2/img1.png" alt="" />
   <img class="images-labs" src="images/lab9/module2/test2/img2.png" alt="" />
